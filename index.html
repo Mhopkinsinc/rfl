@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RFL Standings – jsTree Demo</title>
+  <title>RFL Standings – 2025 Week 2</title>
   <!-- jsTree + jQuery from CDNs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -39,12 +39,12 @@
 </head>
 <body>
   <header>
-    <h1>RFL Standings – 2025 Week 2</h1>
-    <p></p>
+    <h1>RFL Standings – 2025 Week 2</h1>    
   </header>
 
   <div class="toolbar">
-    <input id="q" type="search" placeholder="Search players, positions, or managers… (e.g., 'WR', 'BARKLEY', 'Danny')" />
+    <input id="q" type="search" placeholder="Search players, positions, or managers… (e.g., 'WR' or 'BARKLEY' or 'Denny')" />
+    <button class="btn" id="reloadBtn" title="Force re-fetch the latest JSON">Reload data</button>
     <button class="btn" id="expandAll">Expand all</button>
     <button class="btn" id="collapseAll">Collapse all</button>
   </div>
@@ -54,34 +54,55 @@
   </div>
 
   <script>
-    // Load external JSON file
-    fetch('rfl_standings_2025.json')
-      .then(resp => resp.json())
-      .then(rflData => {
-        const $tree = $("#tree").jstree({
-          core: {
-            data: rflData,
-            themes: { dots: true, icons: false }
-          },
-          plugins: ["search"],
-        });
+    let treeInited = false;
+    let treeApi = null;
 
-        // Expand / Collapse
+    function initOrRefreshTree(data){
+      if (!treeInited){
+        treeApi = $("#tree").jstree({
+          core: { data, themes: { dots: true, icons: false } },
+          plugins: ["search"],
+        }).jstree(true);
+        treeInited = true;
+
+        // Wire up controls once
         $("#expandAll").on("click", () => $("#tree").jstree("open_all"));
         $("#collapseAll").on("click", () => $("#tree").jstree("close_all"));
-
-        // Search with debounce
         const $input = $("#q");
         let to = null;
         $input.on("input", function(){
           if (to) clearTimeout(to);
-          const val = this.value;
-          to = setTimeout(() => $("#tree").jstree(true).search(val), 200);
+          const val = this.value; to = setTimeout(() => $("#tree").jstree(true).search(val), 200);
         });
-      })
-      .catch(err => {
+      } else {
+        // Refresh existing tree with new data
+        treeApi.settings.core.data = data;
+        $("#tree").jstree(true).refresh();
+      }
+    }
+
+    async function fetchJsonWithNoCache(url){
+      // Cache-bust with timestamp + force no-store to avoid stale GitHub Pages / CDN caches
+      const bust = url + (url.includes('?') ? '&' : '?') + 't=' + Date.now();
+      const resp = await fetch(bust, { cache: 'no-store' });
+      if (!resp.ok) throw new Error(resp.status + ' ' + resp.statusText);
+      return resp.json();
+    }
+
+    async function loadExternal(){
+      try {
+        const data = await fetchJsonWithNoCache('rfl_standings_2025.json');
+        initOrRefreshTree(data);
+      } catch (err){
         document.getElementById('tree').innerText = 'Error loading JSON: ' + err;
-      });
+      }
+    }
+
+    // Initial load
+    loadExternal();
+
+    // Reload button (manual cache-bust)
+    document.getElementById('reloadBtn').addEventListener('click', loadExternal);
   </script>
 </body>
 </html>
