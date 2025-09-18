@@ -1,4 +1,4 @@
-            - name: run-notebook
+ - name: run-notebook
   # You may pin to the exact commit or the version.
   # uses: yaananth/run-notebook@77470edbe56a263d46c840ae9c5a7aa35124d673
   uses: yaananth/run-notebook@v2
