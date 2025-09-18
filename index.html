@@ -39,8 +39,8 @@
 </head>
 <body>
   <header>
-    <h1>RFL Standings – Tree View</h1>
-    <p>Simple jsTree rendering that loads JSON externally. Replace <code>rfl_standings.json</code> with your latest file export.</p>
+    <h1>RFL Standings – 2025 Week 2</h1>
+    <p></p>
   </header>
 
   <div class="toolbar">
@@ -55,7 +55,7 @@
 
   <script>
     // Load external JSON file
-    fetch('rfl_standings.json')
+    fetch('rfl_standings_2025.json')
       .then(resp => resp.json())
       .then(rflData => {
         const $tree = $("#tree").jstree({
