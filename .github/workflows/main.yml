@@ -1,14 +1,45 @@
- - name: run-notebook
-  # You may pin to the exact commit or the version.
-  # uses: yaananth/run-notebook@77470edbe56a263d46c840ae9c5a7aa35124d673
-  uses: yaananth/run-notebook@v2
-  with:
-    # Path to notebook with extension that should be executed
-    notebook: rfl.ipynb # optional, default is 
-    # Path to parameters file with extension, contents should be json
-    params: # optional, default is {}
-    # If True, will hide inputs in notebook
-    isReport: # optional
-    # If True, this will pool output every 15 seconds and displays, this is useful in cases where there is long running cells and user wants to see output after going to the page, since github actions does not show streaming from the beginning, this is a hack to get around it
-    poll: # optional
-          
+name: Execute notebook
+
+on:
+  push:
+  workflow_dispatch:  # lets you run it manually too
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'   # pick your version
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # If you have a requirements.txt, prefer this:
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # Otherwise make sure papermill + your libs are installed:
+          pip install papermill jupyter
+
+      - name: Run notebook with parameters
+        uses: yaananth/run-notebook@v2
+        env:
+          # These envs are optional; they’re just made available to the step.
+          RUNNER: ${{ toJson(runner) }}
+          SECRETS: ${{ toJson(secrets) }}
+          GITHUB: ${{ toJson(github) }}
+        with:
+          notebook: "rfl.ipynb"   # <-- update
+          #params:   "notebooks/params.json"          # <-- update (optional)
+          isReport: false
+          poll: true
+
+      - name: Upload outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nb-output
+          path: ${{ runner.temp }}/nb-runner
