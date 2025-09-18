@@ -3,6 +3,8 @@ name: Execute notebook
 on:
   push:
   workflow_dispatch:  # lets you run it manually too
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   run:
