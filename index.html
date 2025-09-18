@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RFL Standings – jsTree Demo</title>
+  <!-- jsTree + jQuery from CDNs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #111821;
+      --text: #e6eef8;
+      --muted: #9db1c6;
+      --accent: #3aa0ff;
+      --border: #1f2a36;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 20px; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, rgba(58,160,255,0.05), transparent); }
+    header h1 { margin: 0 0 8px; font-size: 20px; font-weight: 650; }
+    header p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; padding: 12px 20px; background: var(--panel); border-bottom: 1px solid var(--border); align-items: center; }
+    .toolbar input[type="search"] { flex: 1 1 280px; min-width: 220px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: #0e141b; color: var(--text); outline: none; }
+    .btn { appearance: none; border: 1px solid var(--border); background: #0e141b; color: var(--text); padding: 10px 12px; border-radius: 10px; cursor: pointer; font-weight: 600; }
+    .btn:hover { border-color: #2b3a4c; }
+
+    #tree-wrap { padding: 16px 20px 60px; }
+    #tree { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 10px; }
+
+    /* Make jsTree inherit our dark theme */
+    .jstree-default .jstree-anchor { color: var(--text); }
+    .jstree-default .jstree-search { font-weight: 700; color: var(--accent) !important; }
+    .jstree-default .jstree-hovered, .jstree-default .jstree-clicked { background: rgba(58,160,255,0.15); box-shadow: inset 0 0 0 1px rgba(58,160,255,0.25); border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RFL Standings – Tree View</h1>
+    <p>Simple jsTree rendering that loads JSON externally. Replace <code>rfl_standings.json</code> with your latest file export.</p>
+  </header>
+
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Search players, positions, or managers… (e.g., 'WR', 'BARKLEY', 'Danny')" />
+    <button class="btn" id="expandAll">Expand all</button>
+    <button class="btn" id="collapseAll">Collapse all</button>
+  </div>
+
+  <div id="tree-wrap">
+    <div id="tree"></div>
+  </div>
+
+  <script>
+    // Load external JSON file
+    fetch('rfl_standings.json')
+      .then(resp => resp.json())
+      .then(rflData => {
+        const $tree = $("#tree").jstree({
+          core: {
+            data: rflData,
+            themes: { dots: true, icons: false }
+          },
+          plugins: ["search"],
+        });
+
+        // Expand / Collapse
+        $("#expandAll").on("click", () => $("#tree").jstree("open_all"));
+        $("#collapseAll").on("click", () => $("#tree").jstree("close_all"));
+
+        // Search with debounce
+        const $input = $("#q");
+        let to = null;
+        $input.on("input", function(){
+          if (to) clearTimeout(to);
+          const val = this.value;
+          to = setTimeout(() => $("#tree").jstree(true).search(val), 200);
+        });
+      })
+      .catch(err => {
+        document.getElementById('tree').innerText = 'Error loading JSON: ' + err;
+      });
+  </script>
+</body>
+</html>
