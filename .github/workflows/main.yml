@@ -22,7 +22,7 @@ jobs:
           # If you have a requirements.txt, prefer this:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           # Otherwise make sure papermill + your libs are installed:
-          pip install papermill jupyter pandas duckdb requests ipytree altair
+          pip install papermill jupyter pandas duckdb requests ipytree altair lxml_html_clean
 
       - name: Run notebook with parameters
         uses: yaananth/run-notebook@v2
