@@ -1,7 +1,7 @@
 name: Scheduled Workflow
 on:
   schedule:
-    - cron: '5 0 * * *' # This workflow will run daily at midnight UTC
+    - cron: '*/5 * * * *' # This workflow will run every 5 minutes
 jobs:
   build:
     runs-on: ubuntu-latest
