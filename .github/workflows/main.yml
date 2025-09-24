@@ -76,89 +76,78 @@ jobs:
           git commit -m "chore: update $TARGET_JSON [nb-update]"
           git push origin HEAD:main
 
-            # ---- Send Monday email via Gmail SMTP (New York time) ----
+      # ---- Send Monday email via Gmail SMTP (New York time) ----
       - name: Send Monday email via Gmail
         if: ${{ always() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+        shell: bash
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GMAIL_TO: ${{ secrets.GMAIL_TO }}
           GMAIL_FROM: ${{ secrets.GMAIL_FROM }}
-        run: |
+        run: |2
           set -e
-
-          # Only proceed on Mondays in New York time (uncomment to enforce)
-          # if [ "$(TZ=America/New_York date +%u)" != "1" ]; then
-          #   echo "Not Monday in New York time; skipping email."
-          #   exit 0
-          # fi
 
           : "${GMAIL_USER:?Missing GMAIL_USER}"
           : "${GMAIL_APP_PASSWORD:?Missing GMAIL_APP_PASSWORD}"
           : "${GMAIL_TO:?Missing GMAIL_TO}"
 
           python - <<'PY'
-import os, glob, email.utils, smtplib, mimetypes, time
-from datetime import datetime
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
+          import os, glob, email.utils, smtplib, time
+          from datetime import datetime
+          from email.mime.multipart import MIMEMultipart
+          from email.mime.text import MIMEText
+          from email.mime.image import MIMEImage
 
-TZ = "America/New_York"
-ny_time = time.tzname
-# Subject formatted in New York time
-ny_date = datetime.now().astimezone().strftime("%B %d, %Y")  # runner uses UTC, but the string is fine for display
+          ny_date = datetime.now().strftime("%B %d, %Y")
 
-user = os.environ["GMAIL_USER"]
-pwd = os.environ["GMAIL_APP_PASSWORD"]
-to_list = [x.strip() for x in os.environ["GMAIL_TO"].split(",") if x.strip()]
-from_disp = os.environ.get("GMAIL_FROM") or user
+          user = os.environ["GMAIL_USER"]
+          pwd = os.environ["GMAIL_APP_PASSWORD"]
+          to_list = [x.strip() for x in os.environ["GMAIL_TO"].split(",") if x.strip()]
+          from_disp = os.environ.get("GMAIL_FROM") or user
 
-# Find newest up to 5 PNGs in repo root
-pngs = sorted(glob.glob("*.png"), key=lambda p: os.path.getmtime(p), reverse=True)[:5]
+          pngs = sorted(glob.glob("*.png"), key=lambda p: os.path.getmtime(p), reverse=True)[:5]
 
-# Build HTML (matches your Mailgun version, using cid:filename references)
-parts = []
-parts.append(f"<h2>RFL Weekly Update – {ny_date}</h2>")
-parts.append('<p>View the latest standings here: <a href="https://mhopkinsinc.github.io/rfl/">https://mhopkinsinc.github.io/rfl/</a></p>')
-for p in pngs:
-    bname = os.path.basename(p)
-    parts.append("<div style='margin:16px 0'>"
-                 f"<img src=\"cid:{bname}\" alt=\"{bname}\" "
-                 "style='max-width:100%; height:auto; border:1px solid #ddd; padding:4px; border-radius:6px;'/>"
-                 "</div>")
-parts.append("<hr><p style='font-size:12px;color:#777'>This message was sent automatically by GitHub Actions.</p>")
-html_body = "<!DOCTYPE html><html><body style='font-family:Arial,Helvetica,sans-serif'>" + "".join(parts) + "</body></html>"
+          parts = []
+          parts.append(f"<h2>RFL Weekly Update – {ny_date}</h2>")
+          parts.append('<p>View the latest standings here: <a href="https://mhopkinsinc.github.io/rfl/">https://mhopkinsinc.github.io/rfl/</a></p>')
+          for p in pngs:
+              b = os.path.basename(p)
+              parts.append("<div style='margin:16px 0'>"
+                           f"<img src=\"cid:{b}\" alt=\"{b}\" "
+                           "style='max-width:100%; height:auto; border:1px solid #ddd; padding:4px; border-radius:6px;'/>"
+                           "</div>")
+          parts.append("<hr><p style='font-size:12px;color:#777'>This message was sent automatically by GitHub Actions.</p>")
+          html_body = "<!DOCTYPE html><html><body style='font-family:Arial,Helvetica,sans-serif'>" + "".join(parts) + "</body></html>"
 
-msg = MIMEMultipart('related')
-msg['Subject'] = f"RFL Weekly Update – {ny_date}"
-msg['From'] = from_disp
-msg['To'] = ", ".join(to_list)
-msg['Date'] = email.utils.formatdate(localtime=True)
+          msg = MIMEMultipart('related')
+          msg['Subject'] = f"RFL Weekly Update – {ny_date}"
+          msg['From'] = from_disp
+          msg['To'] = ", ".join(to_list)
+          msg['Date'] = email.utils.formatdate(localtime=True)
 
-alt = MIMEMultipart('alternative')
-alt.attach(MIMEText("Your email client does not support HTML.", 'plain', 'utf-8'))
-alt.attach(MIMEText(html_body, 'html', 'utf-8'))
-msg.attach(alt)
+          alt = MIMEMultipart('alternative')
+          alt.attach(MIMEText("Your email client does not support HTML.", 'plain', 'utf-8'))
+          alt.attach(MIMEText(html_body, 'html', 'utf-8'))
+          msg.attach(alt)
 
-# Attach PNGs inline with Content-ID set to the filename
-for p in pngs:
-    with open(p, 'rb') as f:
-        img = MIMEImage(f.read(), _subtype='png', name=os.path.basename(p))
-    img.add_header('Content-ID', f"<{os.path.basename(p)}>")
-    img.add_header('Content-Disposition', 'inline', filename=os.path.basename(p))
-    msg.attach(img)
+          for p in pngs:
+              with open(p, 'rb') as f:
+                  img = MIMEImage(f.read(), _subtype='png', name=os.path.basename(p))
+              cid = os.path.basename(p)
+              img.add_header('Content-ID', f"<{cid}>")
+              img.add_header('Content-Disposition', 'inline', filename=cid)
+              msg.attach(img)
 
-# Send via Gmail SMTP (STARTTLS)
-with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-    smtp.ehlo()
-    smtp.starttls()
-    smtp.ehlo()
-    smtp.login(user, pwd)
-    smtp.sendmail(user, to_list, msg.as_string())
+          with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+              smtp.ehlo()
+              smtp.starttls()
+              smtp.ehlo()
+              smtp.login(user, pwd)
+              smtp.sendmail(user, to_list, msg.as_string())
 
-print(f"Sent Gmail email to: {', '.join(to_list)}")
-PY
+          print(f"Sent Gmail email to: {', '.join(to_list)}")
+          PY  
 
 
       - name: Upload outputs
