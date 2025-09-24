@@ -2,9 +2,12 @@ name: Execute notebook
 
 on:
   push:
-  workflow_dispatch:  # lets you run it manually too
+  workflow_dispatch:
   schedule:
     - cron: 20 * * * *
+
+permissions:
+  contents: write  # <-- allow pushing commits
 
 jobs:
   run:
@@ -12,32 +15,66 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # needed so we can commit back
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'   # pick your version
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # If you have a requirements.txt, prefer this:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # Otherwise make sure papermill + your libs are installed:
           pip install papermill jupyter pandas duckdb requests ipytree altair lxml_html_clean
 
       - name: Run notebook with parameters
         uses: yaananth/run-notebook@v2
         env:
-          # These envs are optional; they’re just made available to the step.
           RUNNER: ${{ toJson(runner) }}
           SECRETS: ${{ toJson(secrets) }}
           GITHUB: ${{ toJson(github) }}
         with:
-          notebook: "rfl.ipynb"   # <-- update
-          #params:   "notebooks/params.json"          # <-- update (optional)
+          notebook: "rfl.ipynb"
           isReport: false
           poll: true
+
+      # ---- Commit ONE JSON file back to main ----
+      # Change TARGET_JSON to the exact file your notebook creates.
+      - name: Commit JSON output to main
+        if: github.ref == 'refs/heads/main'  # only push when running on main
+        env:
+          TARGET_JSON: rfl_standings_2025.json      # <--- set your filename here
+        run: |
+          set -e
+          if [ ! -f "$TARGET_JSON" ]; then
+            echo "File $TARGET_JSON not found; nothing to commit."
+            exit 0
+          fi
+
+          # Optionally ensure stable ordering/formatting to avoid noisy diffs
+          # python - <<'PY'
+          # import json, sys
+          # p = sys.argv[1]
+          # with open(p) as f: data = json.load(f)
+          # with open(p, "w") as f: json.dump(data, f, indent=2, sort_keys=True)
+          # PY "$TARGET_JSON"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Add only that file
+          git add "$TARGET_JSON"
+
+          # Commit only if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to $TARGET_JSON; skipping commit."
+            exit 0
+          fi
+
+          git commit -m "chore: update $TARGET_JSON [skip ci]"
+          git push origin HEAD:main
 
       - name: Upload outputs
         if: always()
@@ -45,8 +82,8 @@ jobs:
         with:
           name: nb-output
           path: |
-                ${{ github.workspace }}/*.png
-                ${{ github.workspace }}/*.csv
-                ${{ github.workspace }}/*.duckdb
-                ${{ github.workspace }}/*.json
-                ${{ runner.temp }}/nb-runner
+            ${{ github.workspace }}/*.png
+            ${{ github.workspace }}/*.csv
+            ${{ github.workspace }}/*.duckdb
+            ${{ github.workspace }}/*.json
+            ${{ runner.temp }}/nb-runner
