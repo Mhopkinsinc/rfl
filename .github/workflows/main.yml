@@ -76,6 +76,83 @@ jobs:
           git commit -m "chore: update $TARGET_JSON [nb-update]"
           git push origin HEAD:main
 
+      # ---- Send Monday email with embedded PNGs via Mailgun ----
+      - name: Send Monday email via Mailgun (New York time)
+        if: ${{ always() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+        env:
+          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
+          MAILGUN_DOMAIN: ${{ secrets.MAILGUN_DOMAIN }}
+          MAILGUN_TO: ${{ secrets.MAILGUN_TO }}
+          MAILGUN_FROM: ${{ secrets.MAILGUN_FROM }}
+        run: |
+          set -e
+
+          # Only proceed on Mondays in New York time
+          #if [ "$(TZ=America/New_York date +%u)" != "1" ]; then
+          #  echo "Not Monday in New York time; skipping email."
+          #  exit 0
+          #fi
+
+          # Basic secret checks
+          : "${MAILGUN_API_KEY:?Missing MAILGUN_API_KEY}"
+          : "${MAILGUN_DOMAIN:?Missing MAILGUN_DOMAIN}"
+          : "${MAILGUN_TO:?Missing MAILGUN_TO}"
+          : "${MAILGUN_FROM:?Missing MAILGUN_FROM}"
+
+          # Collect up to 5 newest PNGs in repo root (adjust path if needed)
+          PNG_LIST=$(ls -1t *.png 2>/dev/null | head -5 || true)
+          if [ -z "$PNG_LIST" ]; then
+            echo "No PNG files found; sending a link-only email."
+          fi
+
+          NY_DATE="$(TZ=America/New_York date '+%B %d, %Y')"
+          SUBJECT="RFL Weekly Update – ${NY_DATE}"
+
+          EMAIL_HTML="/tmp/rfl_email.html"
+          {
+            echo "<!DOCTYPE html><html><body style='font-family:Arial,Helvetica,sans-serif'>"
+            echo "<h2>RFL Weekly Update – ${NY_DATE}</h2>"
+            echo "<p>View the latest standings and charts here: <a href=\"https://mhopkinsinc.github.io/rfl/\">https://mhopkinsinc.github.io/rfl/</a></p>"
+            if [ -n "$PNG_LIST" ]; then
+              echo "<hr>"
+              echo "<p><strong>Charts</strong></p>"
+              for f in $PNG_LIST; do
+                bname=$(basename "$f")
+                # Scale-friendly inline images
+                echo "<div style='margin:16px 0'>"
+                echo "<img src=\"cid:${bname}\" alt=\"${bname}\" style='max-width:100%; height:auto; border:1px solid #ddd; padding:4px; border-radius:6px;'/>"
+                echo "<div style='font-size:12px;color:#666;margin-top:4px'>${bname}</div>"
+                echo "</div>"
+              done
+            fi
+            echo "<hr><p style='font-size:12px;color:#777'>This message was sent automatically by GitHub Actions.</p>"
+            echo "</body></html>"
+          } > "$EMAIL_HTML"
+
+          # Build curl form fields for inline attachments
+          CURL_ARGS=(
+            -s --fail
+            --user "api:${MAILGUN_API_KEY}"
+            "https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages"
+            -F from="${MAILGUN_FROM}"
+            -F to="${MAILGUN_TO}"
+            -F subject="${SUBJECT}"
+            -F o:tracking="yes"
+            -F o:tag="rfl-weekly"
+            -F html=@"${EMAIL_HTML}"
+          )
+
+          # Attach each PNG as inline so we can reference by cid:filename
+          if [ -n "$PNG_LIST" ]; then
+            for f in $PNG_LIST; do
+              CURL_ARGS+=( -F "inline=@${f};type=image/png" )
+            done
+          fi
+
+          echo "Sending email via Mailgun..."
+          curl "${CURL_ARGS[@]}"
+          echo "Email sent."
+
       - name: Upload outputs
         if: always()
         uses: actions/upload-artifact@v4
