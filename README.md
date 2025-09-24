@@ -2,7 +2,8 @@
 
 This repository powers the **RFL Fantasy League** website. It uses open NFL data to generate live fantasy standings for our league.
 
-![RFL Standings Screenshot](<img width="528" height="692" alt="image" src="https://github.com/user-attachments/assets/64e39925-9100-4496-a2d4-4ed6f71dae4d" />)
+<img width="528" height="692" alt="image" src="https://github.com/user-attachments/assets/f639f48e-5192-4441-bebf-d77ed6b7931c" />
+
 
 ---
 
