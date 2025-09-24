@@ -39,12 +39,12 @@
 </head>
 <body>
   <header>
-    <h1>RFL Standings – 2025</h1>    
+    <h1 id="title">RFL Standings – 2025</h1>
+    <p id="subtitle" aria-live="polite"></p>
   </header>
 
   <div class="toolbar">
-    <input id="q" type="search" placeholder="Search players, positions, or managers… (e.g., 'WR' or 'BARKLEY' or 'Denny')" />
-    <button class="btn" id="reloadBtn" title="Force re-fetch the latest JSON">Reload data</button>
+    <input id="q" type="search" placeholder="Search players, positions, or managers… (e.g., 'WR' or 'BARKLEY' or 'Denny')" />    
     <button class="btn" id="expandAll">Expand all</button>
     <button class="btn" id="collapseAll">Collapse all</button>
   </div>
@@ -56,6 +56,25 @@
   <script>
     let treeInited = false;
     let treeApi = null;
+
+    function formatDateNY(dateObj) {
+      // Format as YYYY-MM-DD in America/New_York
+      const parts = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'America/New_York',
+        year: 'numeric', month: '2-digit', day: '2-digit'
+      }).formatToParts(dateObj);
+      const get = t => parts.find(p => p.type === t)?.value;
+      return `${get('year')}-${get('month')}-${get('day')}`;
+    }
+
+    function setHeaderDate(dateObj) {
+      const titleEl = document.getElementById('title');
+      const dateStr = formatDateNY(dateObj);
+      titleEl.textContent = `RFL Standings – 2025 – ${dateStr}`;
+      // Optional helper line (remove if you don’t want it)
+      const subtitle = document.getElementById('subtitle');
+      subtitle.textContent = `Last updated (NY time): ${dateStr}`;
+    }
 
     function initOrRefreshTree(data){
       if (!treeInited){
@@ -86,6 +105,11 @@
       const bust = url + (url.includes('?') ? '&' : '?') + 't=' + Date.now();
       const resp = await fetch(bust, { cache: 'no-store' });
       if (!resp.ok) throw new Error(resp.status + ' ' + resp.statusText);
+
+      // Prefer Last-Modified header; fall back to "now" if missing
+      const lastModified = resp.headers.get("Last-Modified");
+      setHeaderDate(lastModified ? new Date(lastModified) : new Date());
+
       return resp.json();
     }
 
@@ -100,9 +124,7 @@
 
     // Initial load
     loadExternal();
-
-    // Reload button (manual cache-bust)
-    document.getElementById('reloadBtn').addEventListener('click', loadExternal);
+    
   </script>
 </body>
 </html>
