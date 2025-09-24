@@ -2,9 +2,12 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch when the two files below change.
   push:
-    branches: ["main"]
+    branches: ["main"]     
+    paths:
+      - "index.html"
+      - "rfl_standings_2025.json"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
