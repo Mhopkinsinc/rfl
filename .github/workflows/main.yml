@@ -113,14 +113,12 @@ jobs:
             echo "<!DOCTYPE html><html><body style='font-family:Arial,Helvetica,sans-serif'>"
             echo "<h2>RFL Weekly Update – ${NY_DATE}</h2>"
             echo "<p>View the latest standings here: <a href=\"https://mhopkinsinc.github.io/rfl/\">https://mhopkinsinc.github.io/rfl/</a></p>"
-            if [ -n "$PNG_LIST" ]; then
-              echo "<hr>"
-              echo "<p><strong>Charts</strong></p>"
+            if [ -n "$PNG_LIST" ]; then                      
               for f in $PNG_LIST; do
                 bname=$(basename "$f")
                 # Scale-friendly inline images
                 echo "<div style='margin:16px 0'>"
-                echo "<img src=\"cid:${bname}\" alt=\"${bname}\" style='max-width:100%; height:auto; border:1px solid #ddd; padding:4px; border-radius:6px;'/>"                
+                echo "<img src=\"cid:${bname}\" alt=\"${bname}\" style='max-width:100%; height:auto; border:1px solid #ddd; padding:4px; border-radius:6px;'/>"
                 echo "</div>"
               done
             fi
