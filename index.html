@@ -35,11 +35,15 @@
     .jstree-default .jstree-anchor { color: var(--text); }
     .jstree-default .jstree-search { font-weight: 700; color: var(--accent) !important; }
     .jstree-default .jstree-hovered, .jstree-default .jstree-clicked { background: rgba(58,160,255,0.15); box-shadow: inset 0 0 0 1px rgba(58,160,255,0.25); border-radius: 6px; }
+
+    /* Make the whole row feel clickable */
+    #tree .jstree-node { cursor: pointer; border-radius: 6px; }
+    #tree .jstree-node:hover { background: rgba(58,160,255,0.10); }
   </style>
 </head>
 <body>
   <header>
-    <h1 id="title">RFL Standings - 2025</h1>
+    <h1 id="title">RFL Standings – 2025</h1>
     <p id="subtitle" aria-live="polite"></p>
   </header>
 
@@ -70,8 +74,7 @@
     function setHeaderDate(dateObj) {
       const titleEl = document.getElementById('title');
       const dateStr = formatDateNY(dateObj);
-      // titleEl.textContent = `RFL Standings – ${dateStr}`;
-      // Optional helper line (remove if you don’t want it)
+      // titleEl.textContent = `RFL Standings – 2025 – ${dateStr}`;
       const subtitle = document.getElementById('subtitle');
       subtitle.textContent = `Last updated : ${dateStr}`;
     }
@@ -80,7 +83,7 @@
       if (!treeInited){
         treeApi = $("#tree").jstree({
           core: { data, themes: { dots: true, icons: false } },
-          plugins: ["search"],
+          plugins: ["search", "wholerow"] // wholerow helps visually; we still handle the click ourselves
         }).jstree(true);
         treeInited = true;
 
@@ -92,6 +95,25 @@
         $input.on("input", function(){
           if (to) clearTimeout(to);
           const val = this.value; to = setTimeout(() => $("#tree").jstree(true).search(val), 200);
+        });
+
+        // Make the entire row clickable (not just arrow/anchor)
+        $('#tree').on('click', '.jstree-node', function (e) {
+          // If user actually clicked the anchor or arrow/icon, let jsTree handle it
+          if ($(e.target).closest('.jstree-anchor, .jstree-icon').length) return;
+
+          const tree = $('#tree').jstree(true);
+          const id = this.id; // li id assigned by jsTree like "j1_1"
+          const node = tree.get_node(id);
+
+          // Select the node
+          tree.deselect_all();
+          tree.select_node(id);
+
+          // Toggle if it has children
+          if (node && node.children && node.children.length) {
+            tree.toggle_node(id);
+          }
         });
       } else {
         // Refresh existing tree with new data
@@ -124,7 +146,7 @@
 
     // Initial load
     loadExternal();
-    
+
   </script>
 </body>
 </html>
