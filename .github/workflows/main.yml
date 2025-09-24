@@ -147,7 +147,7 @@ jobs:
               smtp.sendmail(user, to_list, msg.as_string())
 
           print(f"Sent Gmail email to: {', '.join(to_list)}")
-PY
+                PY
 
 
       - name: Upload outputs
