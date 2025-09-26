@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0   # needed so we can commit back
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -61,7 +62,7 @@ jobs:
           # with open(p, "w") as f: json.dump(data, f, indent=2, sort_keys=True)
           # PY "$TARGET_JSON"
 
-          git config user.name "github-actions[bot]"
+          git config user.name "rfl-[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Add only that file
