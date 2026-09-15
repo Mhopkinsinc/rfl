@@ -46,7 +46,7 @@ jobs:
       - name: Commit JSON output to main
         if: github.ref == 'refs/heads/main'  # only push when running on main
         env:
-          TARGET_JSON: rfl_standings_2025.json      # <--- set your filename here
+          TARGET_JSON: rfl_standings_2026.json      # <--- set your filename here
         run: |
           set -e
           if [ ! -f "$TARGET_JSON" ]; then
