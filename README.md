@@ -1,4 +1,4 @@
-# 🏈 RFL Fantasy League – 2025
+# 🏈 RFL Fantasy League
 
 This repository powers the **RFL Fantasy League** website. It uses open NFL data to generate fantasy standings for the keeper league.
 
