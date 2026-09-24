@@ -591,6 +591,9 @@
             "text": "BYRON MURPHY (7 pts)"
           },
           {
+            "text": "QUINYON MITCHELL (0 pts)"
+          },
+          {
             "text": "MAXWELL HAIRSTON (0 pts)"
           },
           {
@@ -601,9 +604,6 @@
           },
           {
             "text": "JESSIE BATES (0 pts)"
-          },
-          {
-            "text": "QUINYON MITCHELL (0 pts)"
           }
         ]
       },
@@ -648,10 +648,10 @@
             "text": "ALEX HIGHSMITH (13 pts)"
           },
           {
-            "text": "ELIJAH PONDER (5 pts)"
+            "text": "KHALIL MACK (5 pts)"
           },
           {
-            "text": "KHALIL MACK (5 pts)"
+            "text": "ELIJAH PONDER (5 pts)"
           },
           {
             "text": "KYLE VAN NOY (0 pts)"
@@ -666,6 +666,9 @@
           },
           {
             "text": "PATRICK MAHOMES (13 pts)"
+          },
+          {
+            "text": "CAM WARD (10 pts)"
           }
         ]
       },
@@ -683,6 +686,9 @@
           },
           {
             "text": "JAYLEN WARREN (0 pts)"
+          },
+          {
+            "text": "Woody Marks (0 pts)"
           }
         ]
       },
@@ -735,6 +741,9 @@
             "text": "Kool-Aid MCKINSTRY (0 pts)"
           },
           {
+            "text": "WILL JOHNSON (0 pts)"
+          },
+          {
             "text": "MALAKI STARKS (0 pts)"
           },
           {
@@ -783,10 +792,10 @@
             "text": "JAELAN PHILLIPS (9 pts)"
           },
           {
-            "text": "MIKE GREEN (4 pts)"
+            "text": "DERICK HALL (4 pts)"
           },
           {
-            "text": "DERICK HALL (4 pts)"
+            "text": "MIKE GREEN (4 pts)"
           },
           {
             "text": "ZAIRE FRANKLIN (2 pts)"
@@ -864,6 +873,150 @@
           },
           {
             "text": "QUENTIN JOHNSTON (0 pts)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Couto [Raiders] (90 pts)",
+    "children": [
+      {
+        "text": "DB (Top 3)",
+        "children": [
+          {
+            "text": "KAMARI LASSITER (0 pts)"
+          },
+          {
+            "text": "JAHDAE BARRON (0 pts)"
+          },
+          {
+            "text": "DEVON WITHERSPOON (0 pts)"
+          },
+          {
+            "text": "Riq Woolen (0 pts)"
+          },
+          {
+            "text": "Pat Surtain II (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "DL (Top 3)",
+        "children": [
+          {
+            "text": "AUSTIN BOOKER (4 pts)"
+          },
+          {
+            "text": "KEION WHITE (4 pts)"
+          },
+          {
+            "text": "DANIELLE HUNTER (4 pts)"
+          },
+          {
+            "text": "DEVONTE WYATT (0 pts)"
+          },
+          {
+            "text": "KOBIE TURNER (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "K (Top 1)",
+        "children": [
+          {
+            "text": "WILL REICHARD (8 pts)"
+          },
+          {
+            "text": "EDDY PINEIRO (4 pts)"
+          }
+        ]
+      },
+      {
+        "text": "LB (Top 2)",
+        "children": [
+          {
+            "text": "T.J. WATT (18 pts)"
+          },
+          {
+            "text": "KADEN ELLISS (3 pts)"
+          },
+          {
+            "text": "JOSAIAH STEWART (1 pts)"
+          },
+          {
+            "text": "CHOP ROBINSON (0 pts)"
+          },
+          {
+            "text": "YAYA DIABY (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "QB (Top 2)",
+        "children": [
+          {
+            "text": "JARED GOFF (11 pts)"
+          },
+          {
+            "text": "DAK PRESCOTT (10 pts)"
+          },
+          {
+            "text": "JAXSON DART (5 pts)"
+          }
+        ]
+      },
+      {
+        "text": "RB (Top 2)",
+        "children": [
+          {
+            "text": "JONATHAN TAYLOR (14 pts)"
+          },
+          {
+            "text": "CHASE BROWN (5 pts)"
+          },
+          {
+            "text": "JAMES COOK (5 pts)"
+          },
+          {
+            "text": "BRAELON ALLEN (3 pts)"
+          },
+          {
+            "text": "TONY POLLARD (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "TE (Top 1)",
+        "children": [
+          {
+            "text": "DALLAS GOEDERT (6 pts)"
+          },
+          {
+            "text": "MIKE GESICKI (3 pts)"
+          }
+        ]
+      },
+      {
+        "text": "WR (Top 3)",
+        "children": [
+          {
+            "text": "XAVIER WORTHY (3 pts)"
+          },
+          {
+            "text": "WAN'DALE ROBINSON (0 pts)"
+          },
+          {
+            "text": "KHALIL SHAKIR (0 pts)"
+          },
+          {
+            "text": "JAYDEN REED (0 pts)"
+          },
+          {
+            "text": "COOPER KUPP (0 pts)"
+          },
+          {
+            "text": "A.J. BROWN (0 pts)"
           }
         ]
       }
@@ -1011,150 +1164,6 @@
           },
           {
             "text": "MATTHEW GOLDEN (3 pts)"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Couto [Raiders] (90 pts)",
-    "children": [
-      {
-        "text": "DB (Top 3)",
-        "children": [
-          {
-            "text": "KAMARI LASSITER (0 pts)"
-          },
-          {
-            "text": "JAHDAE BARRON (0 pts)"
-          },
-          {
-            "text": "DEVON WITHERSPOON (0 pts)"
-          },
-          {
-            "text": "Riq Woolen (0 pts)"
-          },
-          {
-            "text": "Pat Surtain II (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "DL (Top 3)",
-        "children": [
-          {
-            "text": "AUSTIN BOOKER (4 pts)"
-          },
-          {
-            "text": "KEION WHITE (4 pts)"
-          },
-          {
-            "text": "DANIELLE HUNTER (4 pts)"
-          },
-          {
-            "text": "DEVONTE WYATT (0 pts)"
-          },
-          {
-            "text": "KOBIE TURNER (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "K (Top 1)",
-        "children": [
-          {
-            "text": "WILL REICHARD (8 pts)"
-          },
-          {
-            "text": "EDDY PINEIRO (4 pts)"
-          }
-        ]
-      },
-      {
-        "text": "LB (Top 2)",
-        "children": [
-          {
-            "text": "T.J. WATT (18 pts)"
-          },
-          {
-            "text": "KADEN ELLISS (3 pts)"
-          },
-          {
-            "text": "JOSAIAH STEWART (1 pts)"
-          },
-          {
-            "text": "CHOP ROBINSON (0 pts)"
-          },
-          {
-            "text": "YAYA DIABY (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "QB (Top 2)",
-        "children": [
-          {
-            "text": "JARED GOFF (11 pts)"
-          },
-          {
-            "text": "DAK PRESCOTT (10 pts)"
-          },
-          {
-            "text": "JAXSON DART (5 pts)"
-          }
-        ]
-      },
-      {
-        "text": "RB (Top 2)",
-        "children": [
-          {
-            "text": "JONATHAN TAYLOR (14 pts)"
-          },
-          {
-            "text": "CHASE BROWN (5 pts)"
-          },
-          {
-            "text": "JAMES COOK (5 pts)"
-          },
-          {
-            "text": "BRAELON ALLEN (3 pts)"
-          },
-          {
-            "text": "TONY POLLARD (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "TE (Top 1)",
-        "children": [
-          {
-            "text": "DALLAS GOEDERT (6 pts)"
-          },
-          {
-            "text": "MIKE GESICKI (3 pts)"
-          }
-        ]
-      },
-      {
-        "text": "WR (Top 3)",
-        "children": [
-          {
-            "text": "XAVIER WORTHY (3 pts)"
-          },
-          {
-            "text": "WAN'DALE ROBINSON (0 pts)"
-          },
-          {
-            "text": "KHALIL SHAKIR (0 pts)"
-          },
-          {
-            "text": "JAYDEN REED (0 pts)"
-          },
-          {
-            "text": "COOPER KUPP (0 pts)"
-          },
-          {
-            "text": "A.J. BROWN (0 pts)"
           }
         ]
       }
