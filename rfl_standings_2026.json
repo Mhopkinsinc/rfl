@@ -1,6 +1,6 @@
 [
   {
-    "text": "Rizzo [Colts] (200 pts)",
+    "text": "Rizzo [Colts] (205 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -97,7 +97,7 @@
             "text": "JAHMYR GIBBS (26 pts)"
           },
           {
-            "text": "D'ANDRE SWIFT (11 pts)"
+            "text": "D'ANDRE SWIFT (13 pts)"
           },
           {
             "text": "DAVID MONTGOMERY (11 pts)"
@@ -131,13 +131,13 @@
             "text": "JA'MARR CHASE (12 pts)"
           },
           {
+            "text": "DEVONTA SMITH (9 pts)"
+          },
+          {
             "text": "DONTAYVION WICKS (6 pts)"
           },
           {
             "text": "DJ MOORE (6 pts)"
-          },
-          {
-            "text": "DEVONTA SMITH (6 pts)"
           },
           {
             "text": "ISAAC TESLAA (0 pts)"
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "text": "Mass [Bengals] (190 pts)",
+    "text": "Mass [Bengals] (194 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -176,13 +176,13 @@
         "text": "DL (Top 3)",
         "children": [
           {
+            "text": "MONTEZ SWEAT (8 pts)"
+          },
+          {
             "text": "Josh Hines-Allen (6 pts)"
           },
           {
             "text": "Isaiah McGuire (4 pts)"
-          },
-          {
-            "text": "MONTEZ SWEAT (4 pts)"
           },
           {
             "text": "BRANDON DORLUS (0 pts)"
@@ -294,7 +294,7 @@
     ]
   },
   {
-    "text": "Chris [Bears] (177 pts)",
+    "text": "Chris [Bears] (179 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -351,19 +351,19 @@
         "text": "LB (Top 2)",
         "children": [
           {
+            "text": "JIHAAD CAMPBELL (9 pts)"
+          },
+          {
             "text": "TULI TUIPULOTU (8 pts)"
           },
           {
-            "text": "JIHAAD CAMPBELL (7 pts)"
+            "text": "ZACK BAUN (5 pts)"
           },
           {
             "text": "ERNEST JONES (5 pts)"
           },
           {
             "text": "BOYE MAFE (4 pts)"
-          },
-          {
-            "text": "ZACK BAUN (3 pts)"
           }
         ]
       },
@@ -572,20 +572,20 @@
             "text": "JOSH PALMER (6 pts)"
           },
           {
+            "text": "ROME ODUNZE (3 pts)"
+          },
+          {
             "text": "DK METCALF (3 pts)"
           },
           {
             "text": "CHIMERE DIKE (0 pts)"
-          },
-          {
-            "text": "ROME ODUNZE (0 pts)"
           }
         ]
       }
     ]
   },
   {
-    "text": "Denny [Vikings] (143 pts)",
+    "text": "Denny [Vikings] (148 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -665,7 +665,7 @@
             "text": "LAMAR JACKSON (16 pts)"
           },
           {
-            "text": "JALEN HURTS (9 pts)"
+            "text": "JALEN HURTS (14 pts)"
           },
           {
             "text": "SAM DARNOLD (7 pts)"
@@ -688,7 +688,7 @@
             "text": "TRAVIS ETIENNE (2 pts)"
           },
           {
-            "text": "SAQUON BARKLEY (0 pts)"
+            "text": "SAQUON BARKLEY (2 pts)"
           }
         ]
       },
@@ -716,13 +716,13 @@
             "text": "ZAY FLOWERS (9 pts)"
           },
           {
+            "text": "LUTHER BURDEN III (6 pts)"
+          },
+          {
             "text": "EMEKA EGBUKA (6 pts)"
           },
           {
             "text": "ADONAI MITCHELL (3 pts)"
-          },
-          {
-            "text": "LUTHER BURDEN III (0 pts)"
           },
           {
             "text": "QUENTIN JOHNSTON (0 pts)"
@@ -804,7 +804,7 @@
             "text": "ARDEN KEY (3 pts)"
           },
           {
-            "text": "JALYX HUNT (1 pts)"
+            "text": "JALYX HUNT (2 pts)"
           }
         ]
       },
@@ -1237,6 +1237,9 @@
           },
           {
             "text": "NICK HERBIG (2 pts)"
+          },
+          {
+            "text": "JONATHAN GREENARD (0 pts)"
           }
         ]
       },
