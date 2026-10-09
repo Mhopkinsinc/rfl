@@ -1,6 +1,6 @@
 [
   {
-    "text": "Rizzo [Colts] (255 pts)",
+    "text": "Rizzo [Colts] (257 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -52,7 +52,7 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "BRANDON AUBREY (16 pts)"
+            "text": "BRANDON AUBREY (18 pts)"
           }
         ]
       },
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "text": "Mass [Bengals] (236 pts)",
+    "text": "Mass [Bengals] (238 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -196,7 +196,7 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "CHASE MCLAUGHLIN (18 pts)"
+            "text": "CHASE MCLAUGHLIN (20 pts)"
           },
           {
             "text": "DANIEL CARLSON (10 pts)"
@@ -241,10 +241,10 @@
             "text": "DERRICK HENRY (27 pts)"
           },
           {
-            "text": "BIJAN ROBINSON (25 pts)"
+            "text": "JAVONTE WILLIAMS (25 pts)"
           },
           {
-            "text": "JAVONTE WILLIAMS (22 pts)"
+            "text": "BIJAN ROBINSON (25 pts)"
           },
           {
             "text": "TREVEYON HENDERSON (5 pts)"
@@ -438,7 +438,7 @@
     ]
   },
   {
-    "text": "Tony [Cowboys] (208 pts)",
+    "text": "Tony [Cowboys] (211 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -549,13 +549,13 @@
         "text": "TE (Top 1)",
         "children": [
           {
+            "text": "JAKE FERGUSON (14 pts)"
+          },
+          {
             "text": "HAROLD FANNIN JR. (14 pts)"
           },
           {
             "text": "PAT FREIERMUTH (11 pts)"
-          },
-          {
-            "text": "JAKE FERGUSON (9 pts)"
           }
         ]
       },
@@ -563,7 +563,7 @@
         "text": "WR (Top 3)",
         "children": [
           {
-            "text": "CEEDEE LAMB (24 pts)"
+            "text": "CEEDEE LAMB (27 pts)"
           },
           {
             "text": "DAVANTE ADAMS (15 pts)"
@@ -719,7 +719,7 @@
             "text": "LUTHER BURDEN III (9 pts)"
           },
           {
-            "text": "EMEKA EGBUKA (6 pts)"
+            "text": "EMEKA EGBUKA (9 pts)"
           },
           {
             "text": "ADONAI MITCHELL (3 pts)"
@@ -732,7 +732,7 @@
     ]
   },
   {
-    "text": "Couto [Raiders] (190 pts)",
+    "text": "Couto [Raiders] (194 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -795,13 +795,13 @@
             "text": "CHOP ROBINSON (5 pts)"
           },
           {
+            "text": "YAYA DIABY (4 pts)"
+          },
+          {
             "text": "KADEN ELLISS (4 pts)"
           },
           {
             "text": "JOSAIAH STEWART (2 pts)"
-          },
-          {
-            "text": "YAYA DIABY (1 pts)"
           }
         ]
       },
@@ -809,10 +809,10 @@
         "text": "QB (Top 2)",
         "children": [
           {
-            "text": "JARED GOFF (21 pts)"
+            "text": "DAK PRESCOTT (22 pts)"
           },
           {
-            "text": "DAK PRESCOTT (18 pts)"
+            "text": "JARED GOFF (21 pts)"
           },
           {
             "text": "JAXSON DART (5 pts)"
@@ -1026,7 +1026,7 @@
     ]
   },
   {
-    "text": "Dave [Steelers] (175 pts)",
+    "text": "Dave [Steelers] (184 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -1120,13 +1120,13 @@
         "text": "RB (Top 2)",
         "children": [
           {
+            "text": "BUCKY IRVING (17 pts)"
+          },
+          {
             "text": "CHRIS RODRIGUEZ JR. (8 pts)"
           },
           {
             "text": "JAYLEN WARREN (8 pts)"
-          },
-          {
-            "text": "BUCKY IRVING (7 pts)"
           },
           {
             "text": "Woody Marks (6 pts)"
@@ -1176,7 +1176,7 @@
     ]
   },
   {
-    "text": "Mario [Jets] (163 pts)",
+    "text": "Mario [Jets] (166 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -1286,6 +1286,9 @@
         "text": "WR (Top 3)",
         "children": [
           {
+            "text": "GEORGE PICKENS (12 pts)"
+          },
+          {
             "text": "ROMEO DOUBS (12 pts)"
           },
           {
@@ -1296,9 +1299,6 @@
           },
           {
             "text": "DRAKE LONDON (9 pts)"
-          },
-          {
-            "text": "GEORGE PICKENS (6 pts)"
           },
           {
             "text": "TERRY MCLAURIN (6 pts)"
