@@ -2,7 +2,12 @@ name: Execute Python Notebook
 
 on:  
   workflow_dispatch:
-  schedule:    
+    inputs:
+      send_email:
+        description: "Send the weekly email"
+        type: boolean
+        default: true
+  schedule:
      # Run at 8:00am New York time on Monday, Tuesday, and Friday
     - cron: "0 13 * * 1,2,5"
 
@@ -30,16 +35,13 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install papermill jupyter pandas duckdb requests ipytree altair lxml_html_clean
 
-      - name: Run notebook with parameters
-        uses: yaananth/run-notebook@v2
-        env:
-          RUNNER: ${{ toJson(runner) }}
-          SECRETS: ${{ toJson(secrets) }}
-          GITHUB: ${{ toJson(github) }}
-        with:
-          notebook: "rfl.ipynb"
-          isReport: false
-          poll: true
+      # Run papermill directly instead of yaananth/run-notebook, which required
+      # passing every repo secret (toJson(secrets)) to a third-party action.
+      - name: Run notebook
+        run: |
+          mkdir -p "$RUNNER_TEMP/nb-runner"
+          papermill rfl.ipynb "$RUNNER_TEMP/nb-runner/rfl.ipynb" --log-output
+          jupyter nbconvert "$RUNNER_TEMP/nb-runner/rfl.ipynb" --to html
 
       # ---- Commit ONE JSON file back to main ----
       # Change TARGET_JSON to the exact file your notebook creates.
@@ -79,7 +81,7 @@ jobs:
 
       # ---- Send Monday email via Gmail SMTP (New York time) ----
       - name: Send Monday email via Gmail
-        if: ${{ always() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+        if: ${{ always() && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.send_email)) }}
         shell: bash
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
