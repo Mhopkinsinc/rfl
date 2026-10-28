@@ -15,10 +15,10 @@
             "text": "COOPER DEJEAN (7 pts)"
           },
           {
-            "text": "CHRISTIAN GONZALEZ (0 pts)"
+            "text": "L'JARIUS SNEED (0 pts)"
           },
           {
-            "text": "L'JARIUS SNEED (0 pts)"
+            "text": "CHRISTIAN GONZALEZ (0 pts)"
           },
           {
             "text": "DERWIN JAMES (0 pts)"
@@ -35,10 +35,10 @@
             "text": "JEFFERY SIMMONS (16 pts)"
           },
           {
-            "text": "QUINNEN WILLIAMS (12 pts)"
+            "text": "CHRISTIAN BARMORE (12 pts)"
           },
           {
-            "text": "CHRISTIAN BARMORE (12 pts)"
+            "text": "QUINNEN WILLIAMS (12 pts)"
           },
           {
             "text": "DONOVAN EZEIRUAKU (6 pts)"
@@ -168,10 +168,10 @@
             "text": "NATE WIGGINS (0 pts)"
           },
           {
-            "text": "ANDRE CISCO (0 pts)"
+            "text": "TYRIQUE STEVENSON (0 pts)"
           },
           {
-            "text": "TYRIQUE STEVENSON (0 pts)"
+            "text": "ANDRE CISCO (0 pts)"
           }
         ]
       },
@@ -188,10 +188,10 @@
             "text": "Josh Hines-Allen (6 pts)"
           },
           {
-            "text": "BRANDON DORLUS (4 pts)"
+            "text": "TYREE WILSON (4 pts)"
           },
           {
-            "text": "TYREE WILSON (4 pts)"
+            "text": "BRANDON DORLUS (4 pts)"
           }
         ]
       },
@@ -309,13 +309,13 @@
             "text": "DARON BLAND (0 pts)"
           },
           {
+            "text": "TREVON DIGGS (0 pts)"
+          },
+          {
             "text": "MARLON HUMPHREY (0 pts)"
           },
           {
             "text": "ALONTAE TAYLOR (0 pts)"
-          },
-          {
-            "text": "TREVON DIGGS (0 pts)"
           }
         ]
       },
@@ -326,10 +326,10 @@
             "text": "ALIM MCNEILL (14 pts)"
           },
           {
-            "text": "MAXX CROSBY (8 pts)"
+            "text": "AL-QUADIN MUHAMMAD (8 pts)"
           },
           {
-            "text": "AL-QUADIN MUHAMMAD (8 pts)"
+            "text": "MAXX CROSBY (8 pts)"
           },
           {
             "text": "GEORGE KARLAFTIS (4 pts)"
@@ -606,6 +606,9 @@
             "text": "TRENT MCDUFFIE (7 pts)"
           },
           {
+            "text": "MALACHI MOORE (0 pts)"
+          },
+          {
             "text": "KEVIN BYARD (0 pts)"
           },
           {
@@ -613,9 +616,6 @@
           },
           {
             "text": "QUAN MARTIN (0 pts)"
-          },
-          {
-            "text": "MALACHI MOORE (0 pts)"
           }
         ]
       },
@@ -635,10 +635,10 @@
             "text": "ASHTON GILLOTTE (4 pts)"
           },
           {
-            "text": "DORANCE ARMSTRONG (0 pts)"
+            "text": "ARNOLD EBIKETIE (0 pts)"
           },
           {
-            "text": "ARNOLD EBIKETIE (0 pts)"
+            "text": "DORANCE ARMSTRONG (0 pts)"
           }
         ]
       },
@@ -728,10 +728,10 @@
             "text": "DK METCALF (12 pts)"
           },
           {
-            "text": "ROME ODUNZE (9 pts)"
+            "text": "JOSH PALMER (9 pts)"
           },
           {
-            "text": "JOSH PALMER (9 pts)"
+            "text": "ROME ODUNZE (9 pts)"
           },
           {
             "text": "CHIMERE DIKE (0 pts)"
@@ -747,13 +747,13 @@
         "text": "DB (Top 3)",
         "children": [
           {
-            "text": "CAMRYN BYNUM (7 pts)"
-          },
-          {
             "text": "TYKEE SMITH (7 pts)"
           },
           {
             "text": "XAVIER WATTS (7 pts)"
+          },
+          {
+            "text": "CAMRYN BYNUM (7 pts)"
           },
           {
             "text": "JI'AYIR BROWN (0 pts)"
@@ -793,10 +793,10 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "JAKE BATES (20 pts)"
+            "text": "CAM LITTLE (20 pts)"
           },
           {
-            "text": "CAM LITTLE (20 pts)"
+            "text": "JAKE BATES (20 pts)"
           }
         ]
       },
@@ -917,10 +917,10 @@
         "text": "DL (Top 3)",
         "children": [
           {
-            "text": "AUSTIN BOOKER (16 pts)"
+            "text": "DANIELLE HUNTER (16 pts)"
           },
           {
-            "text": "DANIELLE HUNTER (16 pts)"
+            "text": "AUSTIN BOOKER (16 pts)"
           },
           {
             "text": "KEION WHITE (14 pts)"
@@ -1019,10 +1019,10 @@
             "text": "WAN'DALE ROBINSON (12 pts)"
           },
           {
-            "text": "KHALIL SHAKIR (9 pts)"
+            "text": "XAVIER WORTHY (9 pts)"
           },
           {
-            "text": "XAVIER WORTHY (9 pts)"
+            "text": "KHALIL SHAKIR (9 pts)"
           },
           {
             "text": "A.J. BROWN (3 pts)"
@@ -1144,10 +1144,10 @@
             "text": "Woody Marks (10 pts)"
           },
           {
-            "text": "RACHAAD WHITE (8 pts)"
+            "text": "CHRIS RODRIGUEZ JR. (8 pts)"
           },
           {
-            "text": "CHRIS RODRIGUEZ JR. (8 pts)"
+            "text": "RACHAAD WHITE (8 pts)"
           }
         ]
       },
@@ -1203,13 +1203,13 @@
             "text": "JALEN PITRE (0 pts)"
           },
           {
-            "text": "JAYLON JOHNSON (0 pts)"
+            "text": "JOEY PORTER JR. (0 pts)"
           },
           {
             "text": "KAMREN KINCHENS (0 pts)"
           },
           {
-            "text": "JOEY PORTER JR. (0 pts)"
+            "text": "JAYLON JOHNSON (0 pts)"
           }
         ]
       },
@@ -1220,10 +1220,10 @@
             "text": "AIDAN HUTCHINSON (20 pts)"
           },
           {
-            "text": "BYRON MURPHY II (12 pts)"
+            "text": "LEONARD WILLIAMS (12 pts)"
           },
           {
-            "text": "LEONARD WILLIAMS (12 pts)"
+            "text": "BYRON MURPHY II (12 pts)"
           },
           {
             "text": "Will McDonald IV (8 pts)"
@@ -1299,10 +1299,10 @@
             "text": "HUNTER HENRY (16 pts)"
           },
           {
-            "text": "TYLER WARREN (16 pts)"
+            "text": "T.J. HOCKENSON (16 pts)"
           },
           {
-            "text": "T.J. HOCKENSON (16 pts)"
+            "text": "TYLER WARREN (16 pts)"
           }
         ]
       },
@@ -1313,13 +1313,13 @@
             "text": "CHRISTIAN WATSON (33 pts)"
           },
           {
+            "text": "JAMESON WILLIAMS (21 pts)"
+          },
+          {
             "text": "PUKA NACUA (21 pts)"
           },
           {
             "text": "TEE HIGGINS (21 pts)"
-          },
-          {
-            "text": "JAMESON WILLIAMS (21 pts)"
           },
           {
             "text": "MARVIN HARRISON JR. (9 pts)"
