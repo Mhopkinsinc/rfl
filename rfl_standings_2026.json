@@ -1,6 +1,6 @@
 [
   {
-    "text": "Rizzo [Colts] (566 pts)",
+    "text": "Rizzo [Colts] (628 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -9,19 +9,19 @@
             "text": "AMANI HOOKER (35 pts)"
           },
           {
-            "text": "COOPER DEJEAN (7 pts)"
+            "text": "C.J. Gardner-Johnson (7 pts)"
           },
           {
             "text": "CHRISTIAN GONZALEZ (7 pts)"
           },
           {
-            "text": "C.J. Gardner-Johnson (7 pts)"
-          },
-          {
-            "text": "L'JARIUS SNEED (0 pts)"
+            "text": "COOPER DEJEAN (7 pts)"
           },
           {
             "text": "DERWIN JAMES (0 pts)"
+          },
+          {
+            "text": "L'JARIUS SNEED (0 pts)"
           }
         ]
       },
@@ -29,22 +29,22 @@
         "text": "DL (Top 3)",
         "children": [
           {
-            "text": "Greg ROUSSEAU (32 pts)"
+            "text": "Greg ROUSSEAU (40 pts)"
           },
           {
-            "text": "QUINNEN WILLIAMS (24 pts)"
+            "text": "JEFFERY SIMMONS (36 pts)"
           },
           {
-            "text": "JEFFERY SIMMONS (24 pts)"
+            "text": "QUINNEN WILLIAMS (32 pts)"
           },
           {
             "text": "CHRISTIAN BARMORE (18 pts)"
           },
           {
-            "text": "DONOVAN EZEIRUAKU (10 pts)"
+            "text": "DONOVAN EZEIRUAKU (12 pts)"
           },
           {
-            "text": "WALTER NOLEN (4 pts)"
+            "text": "WALTER NOLEN (8 pts)"
           }
         ]
       },
@@ -52,7 +52,7 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "BRANDON AUBREY (38 pts)"
+            "text": "BRANDON AUBREY (40 pts)"
           },
           {
             "text": "BLAKE GRUPE (2 pts)"
@@ -63,19 +63,19 @@
         "text": "LB (Top 2)",
         "children": [
           {
-            "text": "NOLAN SMITH (23 pts)"
+            "text": "NOLAN SMITH (28 pts)"
           },
           {
             "text": "EDGERRIN COOPER (21 pts)"
           },
           {
-            "text": "ABDUL CARTER (12 pts)"
+            "text": "ABDUL CARTER (21 pts)"
           },
           {
             "text": "JACK CAMPBELL (11 pts)"
           },
           {
-            "text": "KAYVON THIBODEAUX (5 pts)"
+            "text": "KAYVON THIBODEAUX (6 pts)"
           }
         ]
       },
@@ -86,10 +86,10 @@
             "text": "JOE BURROW (63 pts)"
           },
           {
-            "text": "DRAKE MAYE (54 pts)"
+            "text": "BROCK PURDY (59 pts)"
           },
           {
-            "text": "BROCK PURDY (53 pts)"
+            "text": "DRAKE MAYE (54 pts)"
           }
         ]
       },
@@ -97,10 +97,10 @@
         "text": "RB (Top 2)",
         "children": [
           {
-            "text": "JAHMYR GIBBS (65 pts)"
+            "text": "JAHMYR GIBBS (73 pts)"
           },
           {
-            "text": "D'ANDRE SWIFT (42 pts)"
+            "text": "D'ANDRE SWIFT (47 pts)"
           },
           {
             "text": "BLAKE CORUM (30 pts)"
@@ -131,13 +131,13 @@
         "text": "WR (Top 3)",
         "children": [
           {
+            "text": "AMON-RA ST. BROWN (45 pts)"
+          },
+          {
             "text": "JA'MARR CHASE (45 pts)"
           },
           {
-            "text": "AMON-RA ST. BROWN (42 pts)"
-          },
-          {
-            "text": "DJ MOORE (18 pts)"
+            "text": "DJ MOORE (24 pts)"
           },
           {
             "text": "DEVONTA SMITH (15 pts)"
@@ -153,160 +153,7 @@
     ]
   },
   {
-    "text": "Chris [Bears] (501 pts)",
-    "children": [
-      {
-        "text": "DB (Top 3)",
-        "children": [
-          {
-            "text": "TALANOA HUFANGA (17 pts)"
-          },
-          {
-            "text": "GENO STONE (0 pts)"
-          },
-          {
-            "text": "MARLON HUMPHREY (0 pts)"
-          },
-          {
-            "text": "ALONTAE TAYLOR (0 pts)"
-          },
-          {
-            "text": "DARON BLAND (0 pts)"
-          },
-          {
-            "text": "TREVON DIGGS (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "DL (Top 3)",
-        "children": [
-          {
-            "text": "ALIM MCNEILL (26 pts)"
-          },
-          {
-            "text": "GEORGE KARLAFTIS (22 pts)"
-          },
-          {
-            "text": "MAXX CROSBY (20 pts)"
-          },
-          {
-            "text": "CHRIS JONES (12 pts)"
-          },
-          {
-            "text": "AL-QUADIN MUHAMMAD (8 pts)"
-          },
-          {
-            "text": "FELIX ANUDIKE-UZOMAH (4 pts)"
-          }
-        ]
-      },
-      {
-        "text": "K (Top 1)",
-        "children": [
-          {
-            "text": "CHAD RYLAND (44 pts)"
-          },
-          {
-            "text": "KA'IMI FAIRBAIRN (40 pts)"
-          }
-        ]
-      },
-      {
-        "text": "LB (Top 2)",
-        "children": [
-          {
-            "text": "ERNEST JONES (34 pts)"
-          },
-          {
-            "text": "BOYE MAFE (31 pts)"
-          },
-          {
-            "text": "TULI TUIPULOTU (21 pts)"
-          },
-          {
-            "text": "ZACK BAUN (21 pts)"
-          },
-          {
-            "text": "JIHAAD CAMPBELL (13 pts)"
-          }
-        ]
-      },
-      {
-        "text": "QB (Top 2)",
-        "children": [
-          {
-            "text": "JOSH ALLEN (72 pts)"
-          },
-          {
-            "text": "TYLER SHOUGH (44 pts)"
-          },
-          {
-            "text": "GENO SMITH (34 pts)"
-          }
-        ]
-      },
-      {
-        "text": "RB (Top 2)",
-        "children": [
-          {
-            "text": "CHRISTIAN MCCAFFREY (57 pts)"
-          },
-          {
-            "text": "BHAYSHUL TUTEN (40 pts)"
-          },
-          {
-            "text": "KEATON MITCHELL (7 pts)"
-          },
-          {
-            "text": "ROSCHON JOHNSON (5 pts)"
-          },
-          {
-            "text": "DE'VON ACHANE (2 pts)"
-          }
-        ]
-      },
-      {
-        "text": "TE (Top 1)",
-        "children": [
-          {
-            "text": "GEORGE KITTLE (40 pts)"
-          },
-          {
-            "text": "COLSTON LOVELAND (21 pts)"
-          },
-          {
-            "text": "THEO JOHNSON (3 pts)"
-          }
-        ]
-      },
-      {
-        "text": "WR (Top 3)",
-        "children": [
-          {
-            "text": "STEFON DIGGS (27 pts)"
-          },
-          {
-            "text": "JALEN COKER (18 pts)"
-          },
-          {
-            "text": "BRIAN THOMAS JR. (9 pts)"
-          },
-          {
-            "text": "TRE HARRIS (9 pts)"
-          },
-          {
-            "text": "RASHID SHAHEED (6 pts)"
-          },
-          {
-            "text": "JALEN MCMILLAN (0 pts)"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Mass [Bengals] (499 pts)",
+    "text": "Mass [Bengals] (545 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -321,13 +168,13 @@
             "text": "ANDREW MUKUBA (7 pts)"
           },
           {
+            "text": "ANDRE CISCO (0 pts)"
+          },
+          {
             "text": "TYRIQUE STEVENSON (0 pts)"
           },
           {
             "text": "NATE WIGGINS (0 pts)"
-          },
-          {
-            "text": "ANDRE CISCO (0 pts)"
           }
         ]
       },
@@ -338,10 +185,10 @@
             "text": "Isaiah McGuire (16 pts)"
           },
           {
-            "text": "MONTEZ SWEAT (12 pts)"
+            "text": "MONTEZ SWEAT (16 pts)"
           },
           {
-            "text": "Josh Hines-Allen (8 pts)"
+            "text": "Josh Hines-Allen (12 pts)"
           },
           {
             "text": "BRANDON DORLUS (6 pts)"
@@ -358,7 +205,7 @@
             "text": "CHASE MCLAUGHLIN (44 pts)"
           },
           {
-            "text": "DANIEL CARLSON (16 pts)"
+            "text": "DANIEL CARLSON (22 pts)"
           }
         ]
       },
@@ -366,19 +213,19 @@
         "text": "LB (Top 2)",
         "children": [
           {
-            "text": "NAKOBE DEAN (30 pts)"
+            "text": "NAKOBE DEAN (36 pts)"
           },
           {
-            "text": "FOYESADE OLUOKUN (27 pts)"
+            "text": "FOYESADE OLUOKUN (29 pts)"
           },
           {
-            "text": "NIK BONITTO (21 pts)"
+            "text": "NIK BONITTO (24 pts)"
           },
           {
-            "text": "PRINCELY UMANMIELEN (15 pts)"
+            "text": "PRINCELY UMANMIELEN (22 pts)"
           },
           {
-            "text": "BRADLEY CHUBB (10 pts)"
+            "text": "BRADLEY CHUBB (11 pts)"
           }
         ]
       },
@@ -386,10 +233,10 @@
         "text": "QB (Top 2)",
         "children": [
           {
-            "text": "CALEB WILLIAMS (31 pts)"
+            "text": "JUSTIN HERBERT (36 pts)"
           },
           {
-            "text": "JUSTIN HERBERT (30 pts)"
+            "text": "CALEB WILLIAMS (35 pts)"
           },
           {
             "text": "DANIEL JONES (29 pts)"
@@ -400,10 +247,10 @@
         "text": "RB (Top 2)",
         "children": [
           {
-            "text": "DERRICK HENRY (45 pts)"
+            "text": "JAVONTE WILLIAMS (52 pts)"
           },
           {
-            "text": "JAVONTE WILLIAMS (44 pts)"
+            "text": "DERRICK HENRY (52 pts)"
           },
           {
             "text": "BIJAN ROBINSON (43 pts)"
@@ -420,7 +267,7 @@
         "text": "TE (Top 1)",
         "children": [
           {
-            "text": "ISAIAH LIKELY (46 pts)"
+            "text": "ISAIAH LIKELY (51 pts)"
           },
           {
             "text": "TREY MCBRIDE (45 pts)"
@@ -456,7 +303,160 @@
     ]
   },
   {
-    "text": "Marco [Eagles] (481 pts)",
+    "text": "Chris [Bears] (535 pts)",
+    "children": [
+      {
+        "text": "DB (Top 3)",
+        "children": [
+          {
+            "text": "TALANOA HUFANGA (17 pts)"
+          },
+          {
+            "text": "DARON BLAND (0 pts)"
+          },
+          {
+            "text": "MARLON HUMPHREY (0 pts)"
+          },
+          {
+            "text": "ALONTAE TAYLOR (0 pts)"
+          },
+          {
+            "text": "GENO STONE (0 pts)"
+          },
+          {
+            "text": "TREVON DIGGS (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "DL (Top 3)",
+        "children": [
+          {
+            "text": "GEORGE KARLAFTIS (32 pts)"
+          },
+          {
+            "text": "ALIM MCNEILL (26 pts)"
+          },
+          {
+            "text": "MAXX CROSBY (20 pts)"
+          },
+          {
+            "text": "CHRIS JONES (14 pts)"
+          },
+          {
+            "text": "AL-QUADIN MUHAMMAD (8 pts)"
+          },
+          {
+            "text": "FELIX ANUDIKE-UZOMAH (4 pts)"
+          }
+        ]
+      },
+      {
+        "text": "K (Top 1)",
+        "children": [
+          {
+            "text": "CHAD RYLAND (44 pts)"
+          },
+          {
+            "text": "KA'IMI FAIRBAIRN (40 pts)"
+          }
+        ]
+      },
+      {
+        "text": "LB (Top 2)",
+        "children": [
+          {
+            "text": "ERNEST JONES (34 pts)"
+          },
+          {
+            "text": "BOYE MAFE (31 pts)"
+          },
+          {
+            "text": "TULI TUIPULOTU (22 pts)"
+          },
+          {
+            "text": "ZACK BAUN (21 pts)"
+          },
+          {
+            "text": "JIHAAD CAMPBELL (15 pts)"
+          }
+        ]
+      },
+      {
+        "text": "QB (Top 2)",
+        "children": [
+          {
+            "text": "JOSH ALLEN (76 pts)"
+          },
+          {
+            "text": "TYLER SHOUGH (49 pts)"
+          },
+          {
+            "text": "GENO SMITH (39 pts)"
+          }
+        ]
+      },
+      {
+        "text": "RB (Top 2)",
+        "children": [
+          {
+            "text": "CHRISTIAN MCCAFFREY (60 pts)"
+          },
+          {
+            "text": "BHAYSHUL TUTEN (40 pts)"
+          },
+          {
+            "text": "KEATON MITCHELL (7 pts)"
+          },
+          {
+            "text": "ROSCHON JOHNSON (5 pts)"
+          },
+          {
+            "text": "DE'VON ACHANE (2 pts)"
+          }
+        ]
+      },
+      {
+        "text": "TE (Top 1)",
+        "children": [
+          {
+            "text": "GEORGE KITTLE (46 pts)"
+          },
+          {
+            "text": "COLSTON LOVELAND (24 pts)"
+          },
+          {
+            "text": "THEO JOHNSON (3 pts)"
+          }
+        ]
+      },
+      {
+        "text": "WR (Top 3)",
+        "children": [
+          {
+            "text": "STEFON DIGGS (27 pts)"
+          },
+          {
+            "text": "JALEN COKER (21 pts)"
+          },
+          {
+            "text": "BRIAN THOMAS JR. (12 pts)"
+          },
+          {
+            "text": "TRE HARRIS (9 pts)"
+          },
+          {
+            "text": "RASHID SHAHEED (6 pts)"
+          },
+          {
+            "text": "JALEN MCMILLAN (0 pts)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Marco [Eagles] (505 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -465,13 +465,13 @@
             "text": "TYKEE SMITH (14 pts)"
           },
           {
+            "text": "JI'AYIR BROWN (10 pts)"
+          },
+          {
             "text": "CAMRYN BYNUM (7 pts)"
           },
           {
             "text": "XAVIER WATTS (7 pts)"
-          },
-          {
-            "text": "JI'AYIR BROWN (0 pts)"
           },
           {
             "text": "MIKE SAINRISTIL (0 pts)"
@@ -508,10 +508,10 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "CAM LITTLE (36 pts)"
+            "text": "CAM LITTLE (44 pts)"
           },
           {
-            "text": "JAKE BATES (32 pts)"
+            "text": "JAKE BATES (34 pts)"
           }
         ]
       },
@@ -519,19 +519,19 @@
         "text": "LB (Top 2)",
         "children": [
           {
-            "text": "ANDREW VAN GINKEL (42 pts)"
+            "text": "ANDREW VAN GINKEL (43 pts)"
           },
           {
             "text": "CARSON SCHWESINGER (32 pts)"
           },
           {
+            "text": "JONATHON COOPER (12 pts)"
+          },
+          {
             "text": "ARDEN KEY (4 pts)"
           },
           {
-            "text": "JONATHON COOPER (3 pts)"
-          },
-          {
-            "text": "JALYX HUNT (3 pts)"
+            "text": "JALYX HUNT (4 pts)"
           }
         ]
       },
@@ -539,13 +539,13 @@
         "text": "QB (Top 2)",
         "children": [
           {
-            "text": "BO NIX (36 pts)"
+            "text": "BO NIX (39 pts)"
           },
           {
-            "text": "AARON RODgERS (35 pts)"
+            "text": "AARON RODgERS (38 pts)"
           },
           {
-            "text": "BAKER MAYFIELD (15 pts)"
+            "text": "BAKER MAYFIELD (21 pts)"
           }
         ]
       },
@@ -587,179 +587,29 @@
         "text": "WR (Top 3)",
         "children": [
           {
+            "text": "PARKER WASHINGTON (39 pts)"
+          },
+          {
             "text": "MATTHEW GOLDEN (39 pts)"
           },
           {
-            "text": "PARKER WASHINGTON (36 pts)"
+            "text": "JUSTIN JEFFERSON (27 pts)"
           },
           {
-            "text": "JUSTIN JEFFERSON (24 pts)"
-          },
-          {
-            "text": "MIKE EVANS (21 pts)"
+            "text": "MIKE EVANS (27 pts)"
           },
           {
             "text": "JOSH DOWNS (18 pts)"
           },
           {
-            "text": "RASHEE RICE (15 pts)"
+            "text": "RASHEE RICE (18 pts)"
           }
         ]
       }
     ]
   },
   {
-    "text": "Tony [Cowboys] (452 pts)",
-    "children": [
-      {
-        "text": "DB (Top 3)",
-        "children": [
-          {
-            "text": "TRENT MCDUFFIE (14 pts)"
-          },
-          {
-            "text": "JULIAN BLACKMON (14 pts)"
-          },
-          {
-            "text": "KEVIN BYARD (14 pts)"
-          },
-          {
-            "text": "TYLER NUBIN (0 pts)"
-          },
-          {
-            "text": "MALACHI MOORE (0 pts)"
-          },
-          {
-            "text": "QUAN MARTIN (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "DL (Top 3)",
-        "children": [
-          {
-            "text": "KWITY PAYE (12 pts)"
-          },
-          {
-            "text": "ASHTON GILLOTTE (12 pts)"
-          },
-          {
-            "text": "MALCOLM KOONCE (12 pts)"
-          },
-          {
-            "text": "MYLES MURPHY (10 pts)"
-          },
-          {
-            "text": "DORANCE ARMSTRONG (4 pts)"
-          },
-          {
-            "text": "ARNOLD EBIKETIE (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "K (Top 1)",
-        "children": [
-          {
-            "text": "JASON MYERS (32 pts)"
-          },
-          {
-            "text": "TYLER LOOP (26 pts)"
-          }
-        ]
-      },
-      {
-        "text": "LB (Top 2)",
-        "children": [
-          {
-            "text": "DALLAS TURNER (37 pts)"
-          },
-          {
-            "text": "JERMAINE JOHNSON II (16 pts)"
-          },
-          {
-            "text": "PATRICK JONES II (11 pts)"
-          },
-          {
-            "text": "BRIAN BURNS (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "QB (Top 2)",
-        "children": [
-          {
-            "text": "JORDAN LOVE (54 pts)"
-          },
-          {
-            "text": "JAYDEN DANIELS (34 pts)"
-          },
-          {
-            "text": "ANTHONY RICHARDSON (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "RB (Top 2)",
-        "children": [
-          {
-            "text": "Kenneth Walker III (51 pts)"
-          },
-          {
-            "text": "OMARION HAMPTON (20 pts)"
-          },
-          {
-            "text": "MARSHAWN LLOYD (13 pts)"
-          },
-          {
-            "text": "TANK BIGSBY (3 pts)"
-          },
-          {
-            "text": "TYJAE SPEARS (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "TE (Top 1)",
-        "children": [
-          {
-            "text": "HAROLD FANNIN JR. (37 pts)"
-          },
-          {
-            "text": "PAT FREIERMUTH (25 pts)"
-          },
-          {
-            "text": "JAKE FERGUSON (17 pts)"
-          }
-        ]
-      },
-      {
-        "text": "WR (Top 3)",
-        "children": [
-          {
-            "text": "CEEDEE LAMB (51 pts)"
-          },
-          {
-            "text": "DAVANTE ADAMS (24 pts)"
-          },
-          {
-            "text": "DK METCALF (18 pts)"
-          },
-          {
-            "text": "ROME ODUNZE (18 pts)"
-          },
-          {
-            "text": "JOSH PALMER (9 pts)"
-          },
-          {
-            "text": "CHIMERE DIKE (6 pts)"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Dave [Steelers] (438 pts)",
+    "text": "Dave [Steelers] (475 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -768,13 +618,13 @@
             "text": "BYRON MURPHY (28 pts)"
           },
           {
+            "text": "QUINYON MITCHELL (7 pts)"
+          },
+          {
             "text": "DEREK STINGLEY JR. (7 pts)"
           },
           {
             "text": "JESSIE BATES (7 pts)"
-          },
-          {
-            "text": "QUINYON MITCHELL (7 pts)"
           },
           {
             "text": "MAXWELL HAIRSTON (0 pts)"
@@ -791,7 +641,7 @@
             "text": "JADEVEON CLOWNEY (22 pts)"
           },
           {
-            "text": "DEFOREST BUCKNER (16 pts)"
+            "text": "DEFOREST BUCKNER (18 pts)"
           },
           {
             "text": "CAMERON HEYWARD (10 pts)"
@@ -811,10 +661,10 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "WIL LUTZ (32 pts)"
+            "text": "WIL LUTZ (34 pts)"
           },
           {
-            "text": "JAKE ELLIOTT (14 pts)"
+            "text": "JAKE ELLIOTT (22 pts)"
           }
         ]
       },
@@ -825,13 +675,13 @@
             "text": "ELIJAH PONDER (36 pts)"
           },
           {
-            "text": "DEVIN LLOYD (29 pts)"
+            "text": "DEVIN LLOYD (32 pts)"
           },
           {
-            "text": "ALEX HIGHSMITH (17 pts)"
+            "text": "ALEX HIGHSMITH (26 pts)"
           },
           {
-            "text": "KHALIL MACK (16 pts)"
+            "text": "KHALIL MACK (17 pts)"
           },
           {
             "text": "KYLE VAN NOY (13 pts)"
@@ -842,13 +692,13 @@
         "text": "QB (Top 2)",
         "children": [
           {
-            "text": "PATRICK MAHOMES (47 pts)"
+            "text": "PATRICK MAHOMES (54 pts)"
           },
           {
-            "text": "BRYCE YOUNG (42 pts)"
+            "text": "BRYCE YOUNG (47 pts)"
           },
           {
-            "text": "CAM WARD (33 pts)"
+            "text": "CAM WARD (40 pts)"
           }
         ]
       },
@@ -856,7 +706,7 @@
         "text": "RB (Top 2)",
         "children": [
           {
-            "text": "BUCKY IRVING (42 pts)"
+            "text": "BUCKY IRVING (45 pts)"
           },
           {
             "text": "JAYLEN WARREN (29 pts)"
@@ -876,7 +726,7 @@
         "text": "TE (Top 1)",
         "children": [
           {
-            "text": "TRAVIS KELCE (31 pts)"
+            "text": "TRAVIS KELCE (37 pts)"
           },
           {
             "text": "ORONDE GADSDEN II (8 pts)"
@@ -890,19 +740,19 @@
         "text": "WR (Top 3)",
         "children": [
           {
-            "text": "TETAIROA MCMILLAN (27 pts)"
+            "text": "TETAIROA MCMILLAN (33 pts)"
           },
           {
             "text": "JAKOBI MEYERS (18 pts)"
           },
           {
-            "text": "KEENAN ALLEN (15 pts)"
+            "text": "LADD MCCONKEY (18 pts)"
           },
           {
             "text": "JAYLEN WADDLE (15 pts)"
           },
           {
-            "text": "LADD MCCONKEY (9 pts)"
+            "text": "KEENAN ALLEN (15 pts)"
           },
           {
             "text": "JORDAN ADDISON (9 pts)"
@@ -912,7 +762,7 @@
     ]
   },
   {
-    "text": "Couto [Raiders] (438 pts)",
+    "text": "Couto [Raiders] (469 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
@@ -924,13 +774,13 @@
             "text": "Pat Surtain II (0 pts)"
           },
           {
-            "text": "Riq Woolen (0 pts)"
-          },
-          {
             "text": "NICK EMMANWORI (0 pts)"
           },
           {
             "text": "DEVON WITHERSPOON (0 pts)"
+          },
+          {
+            "text": "Riq Woolen (0 pts)"
           },
           {
             "text": "JAHDAE BARRON (0 pts)"
@@ -964,7 +814,7 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "WILL REICHARD (46 pts)"
+            "text": "WILL REICHARD (48 pts)"
           },
           {
             "text": "EDDY PINEIRO (16 pts)"
@@ -981,7 +831,7 @@
             "text": "CHOP ROBINSON (24 pts)"
           },
           {
-            "text": "KADEN ELLISS (19 pts)"
+            "text": "KADEN ELLISS (20 pts)"
           },
           {
             "text": "YAYA DIABY (18 pts)"
@@ -995,10 +845,10 @@
         "text": "QB (Top 2)",
         "children": [
           {
-            "text": "DAK PRESCOTT (53 pts)"
+            "text": "DAK PRESCOTT (63 pts)"
           },
           {
-            "text": "JARED GOFF (45 pts)"
+            "text": "JARED GOFF (50 pts)"
           },
           {
             "text": "JAXSON DART (5 pts)"
@@ -1009,16 +859,16 @@
         "text": "RB (Top 2)",
         "children": [
           {
-            "text": "JAMES COOK (47 pts)"
+            "text": "JAMES COOK (52 pts)"
           },
           {
             "text": "JONATHAN TAYLOR (42 pts)"
           },
           {
-            "text": "TONY POLLARD (35 pts)"
+            "text": "TONY POLLARD (37 pts)"
           },
           {
-            "text": "BRAELON ALLEN (23 pts)"
+            "text": "BRAELON ALLEN (25 pts)"
           },
           {
             "text": "CHASE BROWN (21 pts)"
@@ -1043,47 +893,50 @@
         "text": "WR (Top 3)",
         "children": [
           {
-            "text": "KHALIL SHAKIR (15 pts)"
+            "text": "KHALIL SHAKIR (18 pts)"
+          },
+          {
+            "text": "XAVIER WORTHY (15 pts)"
           },
           {
             "text": "WAN'DALE ROBINSON (15 pts)"
           },
           {
-            "text": "XAVIER WORTHY (9 pts)"
-          },
-          {
             "text": "A.J. BROWN (3 pts)"
           },
           {
-            "text": "Alec Pierce (0 pts)"
-          },
-          {
             "text": "JAYDEN REED (0 pts)"
+          },
+          {
+            "text": "Alec Pierce (0 pts)"
           }
         ]
       }
     ]
   },
   {
-    "text": "Jumps [Packers] (431 pts)",
+    "text": "Tony [Cowboys] (464 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
         "children": [
           {
-            "text": "CALEN BULLOCK (14 pts)"
+            "text": "KEVIN BYARD (14 pts)"
           },
           {
-            "text": "JAYLON JOHNSON (10 pts)"
+            "text": "JULIAN BLACKMON (14 pts)"
           },
           {
-            "text": "KAMREN KINCHENS (7 pts)"
+            "text": "TRENT MCDUFFIE (14 pts)"
           },
           {
-            "text": "JOEY PORTER JR. (0 pts)"
+            "text": "MALACHI MOORE (0 pts)"
           },
           {
-            "text": "JALEN PITRE (0 pts)"
+            "text": "QUAN MARTIN (0 pts)"
+          },
+          {
+            "text": "TYLER NUBIN (0 pts)"
           }
         ]
       },
@@ -1091,22 +944,22 @@
         "text": "DL (Top 3)",
         "children": [
           {
-            "text": "AIDAN HUTCHINSON (24 pts)"
+            "text": "MALCOLM KOONCE (12 pts)"
           },
           {
-            "text": "BYRON MURPHY II (20 pts)"
+            "text": "KWITY PAYE (12 pts)"
           },
           {
-            "text": "Will McDonald IV (16 pts)"
+            "text": "ASHTON GILLOTTE (12 pts)"
           },
           {
-            "text": "LEONARD WILLIAMS (12 pts)"
+            "text": "MYLES MURPHY (10 pts)"
           },
           {
-            "text": "JAMES PEARCE JR. (0 pts)"
+            "text": "DORANCE ARMSTRONG (4 pts)"
           },
           {
-            "text": "CAMERON JORDAN (0 pts)"
+            "text": "ARNOLD EBIKETIE (0 pts)"
           }
         ]
       },
@@ -1114,10 +967,10 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "HARRISON BUTKER (24 pts)"
+            "text": "JASON MYERS (32 pts)"
           },
           {
-            "text": "Andy Borregales (22 pts)"
+            "text": "TYLER LOOP (26 pts)"
           }
         ]
       },
@@ -1125,16 +978,16 @@
         "text": "LB (Top 2)",
         "children": [
           {
-            "text": "BYRON YOUNG (29 pts)"
+            "text": "DALLAS TURNER (38 pts)"
           },
           {
-            "text": "FRANKIE LUVU (19 pts)"
+            "text": "JERMAINE JOHNSON II (16 pts)"
           },
           {
-            "text": "NICK HERBIG (16 pts)"
+            "text": "PATRICK JONES II (12 pts)"
           },
           {
-            "text": "JONATHAN GREENARD (5 pts)"
+            "text": "BRIAN BURNS (0 pts)"
           }
         ]
       },
@@ -1142,13 +995,13 @@
         "text": "QB (Top 2)",
         "children": [
           {
-            "text": "TREVOR LAWRENCE (45 pts)"
+            "text": "JORDAN LOVE (54 pts)"
           },
           {
-            "text": "MATTHEW STAFFORD (45 pts)"
+            "text": "JAYDEN DANIELS (34 pts)"
           },
           {
-            "text": "KYLER MURRAY (17 pts)"
+            "text": "ANTHONY RICHARDSON (0 pts)"
           }
         ]
       },
@@ -1156,19 +1009,19 @@
         "text": "RB (Top 2)",
         "children": [
           {
-            "text": "TYLER ALLGEIER (17 pts)"
+            "text": "Kenneth Walker III (51 pts)"
           },
           {
-            "text": "KENNY GAINWELL (11 pts)"
+            "text": "OMARION HAMPTON (22 pts)"
           },
           {
-            "text": "JACORY CROSKEY-MERRITT (10 pts)"
+            "text": "MARSHAWN LLOYD (13 pts)"
           },
           {
-            "text": "KALEB JOHNSON (7 pts)"
+            "text": "TANK BIGSBY (3 pts)"
           },
           {
-            "text": "RICO DOWDLE (7 pts)"
+            "text": "TYJAE SPEARS (0 pts)"
           }
         ]
       },
@@ -1176,13 +1029,13 @@
         "text": "TE (Top 1)",
         "children": [
           {
-            "text": "T.J. HOCKENSON (24 pts)"
+            "text": "HAROLD FANNIN JR. (37 pts)"
           },
           {
-            "text": "HUNTER HENRY (21 pts)"
+            "text": "PAT FREIERMUTH (30 pts)"
           },
           {
-            "text": "TYLER WARREN (16 pts)"
+            "text": "JAKE FERGUSON (17 pts)"
           }
         ]
       },
@@ -1190,200 +1043,47 @@
         "text": "WR (Top 3)",
         "children": [
           {
-            "text": "CHRISTIAN WATSON (48 pts)"
+            "text": "CEEDEE LAMB (60 pts)"
           },
           {
-            "text": "TEE HIGGINS (42 pts)"
+            "text": "DAVANTE ADAMS (24 pts)"
           },
           {
-            "text": "PUKA NACUA (36 pts)"
+            "text": "DK METCALF (18 pts)"
           },
           {
-            "text": "JAMESON WILLIAMS (30 pts)"
+            "text": "ROME ODUNZE (18 pts)"
           },
           {
-            "text": "COURTLAND SUTTON (12 pts)"
+            "text": "JOSH PALMER (9 pts)"
           },
           {
-            "text": "MARVIN HARRISON JR. (9 pts)"
+            "text": "CHIMERE DIKE (9 pts)"
           }
         ]
       }
     ]
   },
   {
-    "text": "Mario [Jets] (422 pts)",
+    "text": "Denny [Vikings] (452 pts)",
     "children": [
       {
         "text": "DB (Top 3)",
         "children": [
-          {
-            "text": "XAVIER MCKINNEY (42 pts)"
-          },
-          {
-            "text": "TRAVIS HUNTER (21 pts)"
-          },
-          {
-            "text": "KEISEAN NIXON (7 pts)"
-          },
-          {
-            "text": "JOSH JOBE (7 pts)"
-          },
-          {
-            "text": "COBIE DURANT (0 pts)"
-          },
-          {
-            "text": "MIKE JACKSON (0 pts)"
-          }
-        ]
-      },
-      {
-        "text": "DL (Top 3)",
-        "children": [
-          {
-            "text": "JALEN REDMOND (8 pts)"
-          },
-          {
-            "text": "ZACH SIELER (8 pts)"
-          },
-          {
-            "text": "AARON DONALD (6 pts)"
-          },
-          {
-            "text": "DERRICK HARMON (6 pts)"
-          },
-          {
-            "text": "Nnamdi Madubuike (4 pts)"
-          },
-          {
-            "text": "CALIJAH KANCEY (2 pts)"
-          }
-        ]
-      },
-      {
-        "text": "K (Top 1)",
-        "children": [
-          {
-            "text": "CHRIS BOSWELL (38 pts)"
-          },
-          {
-            "text": "EVAN MCPHERSON (26 pts)"
-          }
-        ]
-      },
-      {
-        "text": "LB (Top 2)",
-        "children": [
-          {
-            "text": "ODAFE OWEH (24 pts)"
-          },
-          {
-            "text": "JOSH SWEAT (17 pts)"
-          },
-          {
-            "text": "JORDYN BROOKS (16 pts)"
-          },
-          {
-            "text": "DEMARCUS LAWRENCE (13 pts)"
-          },
-          {
-            "text": "JARED VERSE (4 pts)"
-          }
-        ]
-      },
-      {
-        "text": "QB (Top 2)",
-        "children": [
-          {
-            "text": "C.J. STROUD (53 pts)"
-          },
-          {
-            "text": "MALIK WILLIS (32 pts)"
-          },
-          {
-            "text": "MICHAEL PENIX JR. (27 pts)"
-          }
-        ]
-      },
-      {
-        "text": "RB (Top 2)",
-        "children": [
-          {
-            "text": "RHAMONDRE STEVENSON (24 pts)"
-          },
-          {
-            "text": "CAM SKATTEBO (22 pts)"
-          },
-          {
-            "text": "TYRONE TRACY JR. (9 pts)"
-          },
-          {
-            "text": "BREECE HALL (9 pts)"
-          },
-          {
-            "text": "JOSH JACOBS (9 pts)"
-          }
-        ]
-      },
-      {
-        "text": "TE (Top 1)",
-        "children": [
-          {
-            "text": "JUWAN JOHNSON (27 pts)"
-          },
-          {
-            "text": "AJ BARNER (13 pts)"
-          },
-          {
-            "text": "CHARLIE KOLAR (5 pts)"
-          }
-        ]
-      },
-      {
-        "text": "WR (Top 3)",
-        "children": [
-          {
-            "text": "GEORGE PICKENS (33 pts)"
-          },
-          {
-            "text": "NICO COLLINS (33 pts)"
-          },
-          {
-            "text": "DRAKE LONDON (27 pts)"
-          },
-          {
-            "text": "MALIK NABERS (24 pts)"
-          },
-          {
-            "text": "ROMEO DOUBS (15 pts)"
-          },
-          {
-            "text": "TERRY MCLAURIN (9 pts)"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Denny [Vikings] (418 pts)",
-    "children": [
-      {
-        "text": "DB (Top 3)",
-        "children": [
-          {
-            "text": "KYLE HAMILTON (7 pts)"
-          },
           {
             "text": "BRIAN BRANCH (7 pts)"
           },
           {
-            "text": "WILL JOHNSON (0 pts)"
+            "text": "KYLE HAMILTON (7 pts)"
           },
           {
             "text": "MALAKI STARKS (0 pts)"
           },
           {
             "text": "JAYCEE HORN (0 pts)"
+          },
+          {
+            "text": "WILL JOHNSON (0 pts)"
           },
           {
             "text": "Kool-Aid MCKINSTRY (0 pts)"
@@ -1400,7 +1100,7 @@
             "text": "CHASE YOUNG (32 pts)"
           },
           {
-            "text": "ZACH ALLEN (18 pts)"
+            "text": "ZACH ALLEN (20 pts)"
           },
           {
             "text": "TRAVON WALKER (12 pts)"
@@ -1414,10 +1114,10 @@
         "text": "K (Top 1)",
         "children": [
           {
-            "text": "MATT GAY (42 pts)"
+            "text": "MATT GAY (44 pts)"
           },
           {
-            "text": "CAMERON DICKER (36 pts)"
+            "text": "CAMERON DICKER (38 pts)"
           }
         ]
       },
@@ -1425,7 +1125,7 @@
         "text": "LB (Top 2)",
         "children": [
           {
-            "text": "MIKE GREEN (27 pts)"
+            "text": "MIKE GREEN (36 pts)"
           },
           {
             "text": "DERICK HALL (21 pts)"
@@ -1459,19 +1159,19 @@
         "text": "RB (Top 2)",
         "children": [
           {
-            "text": "CHUBA HUBBARD (45 pts)"
+            "text": "CHUBA HUBBARD (53 pts)"
           },
           {
-            "text": "ASHTON JEANTY (26 pts)"
+            "text": "ASHTON JEANTY (33 pts)"
           },
           {
-            "text": "SAQUON BARKLEY (13 pts)"
+            "text": "SAQUON BARKLEY (18 pts)"
           },
           {
             "text": "JORDAN MASON (7 pts)"
           },
           {
-            "text": "TRAVIS ETIENNE (2 pts)"
+            "text": "TRAVIS ETIENNE (4 pts)"
           }
         ]
       },
@@ -1496,10 +1196,10 @@
             "text": "LUTHER BURDEN III (30 pts)"
           },
           {
-            "text": "ZAY FLOWERS (27 pts)"
+            "text": "ZAY FLOWERS (30 pts)"
           },
           {
-            "text": "CHRIS OLAVE (27 pts)"
+            "text": "CHRIS OLAVE (30 pts)"
           },
           {
             "text": "EMEKA EGBUKA (15 pts)"
@@ -1509,6 +1209,309 @@
           },
           {
             "text": "QUENTIN JOHNSTON (9 pts)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Mario [Jets] (444 pts)",
+    "children": [
+      {
+        "text": "DB (Top 3)",
+        "children": [
+          {
+            "text": "XAVIER MCKINNEY (42 pts)"
+          },
+          {
+            "text": "TRAVIS HUNTER (21 pts)"
+          },
+          {
+            "text": "JOSH JOBE (7 pts)"
+          },
+          {
+            "text": "KEISEAN NIXON (7 pts)"
+          },
+          {
+            "text": "MIKE JACKSON (0 pts)"
+          },
+          {
+            "text": "COBIE DURANT (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "DL (Top 3)",
+        "children": [
+          {
+            "text": "ZACH SIELER (8 pts)"
+          },
+          {
+            "text": "JALEN REDMOND (8 pts)"
+          },
+          {
+            "text": "AARON DONALD (6 pts)"
+          },
+          {
+            "text": "DERRICK HARMON (6 pts)"
+          },
+          {
+            "text": "Nnamdi Madubuike (4 pts)"
+          },
+          {
+            "text": "CALIJAH KANCEY (2 pts)"
+          }
+        ]
+      },
+      {
+        "text": "K (Top 1)",
+        "children": [
+          {
+            "text": "CHRIS BOSWELL (44 pts)"
+          },
+          {
+            "text": "EVAN MCPHERSON (26 pts)"
+          }
+        ]
+      },
+      {
+        "text": "LB (Top 2)",
+        "children": [
+          {
+            "text": "ODAFE OWEH (24 pts)"
+          },
+          {
+            "text": "JORDYN BROOKS (22 pts)"
+          },
+          {
+            "text": "JOSH SWEAT (17 pts)"
+          },
+          {
+            "text": "DEMARCUS LAWRENCE (13 pts)"
+          },
+          {
+            "text": "JARED VERSE (4 pts)"
+          }
+        ]
+      },
+      {
+        "text": "QB (Top 2)",
+        "children": [
+          {
+            "text": "C.J. STROUD (53 pts)"
+          },
+          {
+            "text": "MALIK WILLIS (32 pts)"
+          },
+          {
+            "text": "MICHAEL PENIX JR. (27 pts)"
+          }
+        ]
+      },
+      {
+        "text": "RB (Top 2)",
+        "children": [
+          {
+            "text": "RHAMONDRE STEVENSON (24 pts)"
+          },
+          {
+            "text": "CAM SKATTEBO (24 pts)"
+          },
+          {
+            "text": "BREECE HALL (16 pts)"
+          },
+          {
+            "text": "TYRONE TRACY JR. (9 pts)"
+          },
+          {
+            "text": "JOSH JACOBS (9 pts)"
+          }
+        ]
+      },
+      {
+        "text": "TE (Top 1)",
+        "children": [
+          {
+            "text": "JUWAN JOHNSON (27 pts)"
+          },
+          {
+            "text": "AJ BARNER (13 pts)"
+          },
+          {
+            "text": "CHARLIE KOLAR (5 pts)"
+          }
+        ]
+      },
+      {
+        "text": "WR (Top 3)",
+        "children": [
+          {
+            "text": "GEORGE PICKENS (39 pts)"
+          },
+          {
+            "text": "NICO COLLINS (33 pts)"
+          },
+          {
+            "text": "MALIK NABERS (30 pts)"
+          },
+          {
+            "text": "DRAKE LONDON (27 pts)"
+          },
+          {
+            "text": "ROMEO DOUBS (15 pts)"
+          },
+          {
+            "text": "TERRY MCLAURIN (9 pts)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Jumps [Packers] (441 pts)",
+    "children": [
+      {
+        "text": "DB (Top 3)",
+        "children": [
+          {
+            "text": "CALEN BULLOCK (14 pts)"
+          },
+          {
+            "text": "JAYLON JOHNSON (10 pts)"
+          },
+          {
+            "text": "KAMREN KINCHENS (7 pts)"
+          },
+          {
+            "text": "JOEY PORTER JR. (0 pts)"
+          },
+          {
+            "text": "KERBY JOSEPH (0 pts)"
+          },
+          {
+            "text": "JALEN PITRE (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "DL (Top 3)",
+        "children": [
+          {
+            "text": "AIDAN HUTCHINSON (24 pts)"
+          },
+          {
+            "text": "BYRON MURPHY II (20 pts)"
+          },
+          {
+            "text": "Will McDonald IV (16 pts)"
+          },
+          {
+            "text": "LEONARD WILLIAMS (12 pts)"
+          },
+          {
+            "text": "JAMES PEARCE JR. (0 pts)"
+          },
+          {
+            "text": "CAMERON JORDAN (0 pts)"
+          }
+        ]
+      },
+      {
+        "text": "K (Top 1)",
+        "children": [
+          {
+            "text": "HARRISON BUTKER (28 pts)"
+          },
+          {
+            "text": "Andy Borregales (22 pts)"
+          }
+        ]
+      },
+      {
+        "text": "LB (Top 2)",
+        "children": [
+          {
+            "text": "BYRON YOUNG (29 pts)"
+          },
+          {
+            "text": "FRANKIE LUVU (19 pts)"
+          },
+          {
+            "text": "NICK HERBIG (16 pts)"
+          },
+          {
+            "text": "JONATHAN GREENARD (9 pts)"
+          }
+        ]
+      },
+      {
+        "text": "QB (Top 2)",
+        "children": [
+          {
+            "text": "TREVOR LAWRENCE (49 pts)"
+          },
+          {
+            "text": "MATTHEW STAFFORD (45 pts)"
+          },
+          {
+            "text": "KYLER MURRAY (17 pts)"
+          }
+        ]
+      },
+      {
+        "text": "RB (Top 2)",
+        "children": [
+          {
+            "text": "TYLER ALLGEIER (19 pts)"
+          },
+          {
+            "text": "KENNY GAINWELL (11 pts)"
+          },
+          {
+            "text": "JACORY CROSKEY-MERRITT (10 pts)"
+          },
+          {
+            "text": "RICO DOWDLE (9 pts)"
+          },
+          {
+            "text": "KALEB JOHNSON (7 pts)"
+          }
+        ]
+      },
+      {
+        "text": "TE (Top 1)",
+        "children": [
+          {
+            "text": "T.J. HOCKENSON (24 pts)"
+          },
+          {
+            "text": "HUNTER HENRY (21 pts)"
+          },
+          {
+            "text": "TYLER WARREN (16 pts)"
+          }
+        ]
+      },
+      {
+        "text": "WR (Top 3)",
+        "children": [
+          {
+            "text": "CHRISTIAN WATSON (48 pts)"
+          },
+          {
+            "text": "TEE HIGGINS (42 pts)"
+          },
+          {
+            "text": "JAMESON WILLIAMS (36 pts)"
+          },
+          {
+            "text": "PUKA NACUA (36 pts)"
+          },
+          {
+            "text": "COURTLAND SUTTON (12 pts)"
+          },
+          {
+            "text": "MARVIN HARRISON JR. (9 pts)"
           }
         ]
       }
